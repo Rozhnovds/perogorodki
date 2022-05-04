@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/media_queries.css">
+	<title>Peregorodki</title>
+</head>
+<body>
+
+
+<!-- ===== 1. HEADER ===== -->
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+
+			<div class="header__logo">
+				<img class="image" src="assets/icons/logo.svg" alt="logo">
+			</div>
+
+			<nav class="header__nav nav">
+				<ol class="nav__list">
+					<li class="nav__items"><a href="#" class="nav__link">НАША ПРОДУКЦИЯ</a></li>
+					<li class="nav__items"><a href="#" class="nav__link">ПРОЕКТЫ</a></li>
+					<li class="nav__items"><a href="#" class="nav__link">ВИДЫ МАТЕРИАЛОВ</a></li>
+					<li class="nav__items"><a href="#" class="nav__link">КАЛЬКУЛЯТОР СТОИМОСТИ</a></li>
+					<li class="nav__items"><a href="#" class="nav__link">КОНТАКТЫ</a></li>
+				</ol>
+			</nav>
+
+			<div class="header__call">
+				<div class="header__call-icon">
+					<img class="image" src="assets/icons/call.svg" alt="logo">
+				</div>
+				<a class="header__call-number" href="tel:80005553535">8 8000 555 3535</a>
+				<a class="header__call-order" href="#">Заказать обратный звонок</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+
+<!-- ===== 2. HERO SECTION ===== -->
+
+<section class="hero">
+	<div class="container">
+
+		<div class="hero__background">
+			<img class='image' src="./assets/img/FRAMES_0001s_0000_office_render.png" alt="glass partition">
+		</div>
+
+		<div class="hero__mark hero__mark--1st">
+			<img class="image" src="./assets/icons/mark.svg" alt="mark">
+		</div>
+
+		<div class="hero__mark hero__mark--2nd hero__mark--active">
+			<div class="hero__mark-wrapper hint hint--left"><!-- для позиционирования псевдоэлемента -->
+				<img class="image" src="./assets/icons/mark_active_down.svg" alt="mark">;
+			</div>
+		</div>
+
+		<div class="hero__mark hero__mark--3rd">
+			<img class="image" src="./assets/icons/mark.svg" alt="mark">
+		</div>
+
+		<div class="hero__arrow-left">
+			<svg class="svg-arrow-left">
+				<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+			</svg>
+		</div>
+
+
+		<div class="hero__offer">
+			<div class="hero__offer-inner">
+
+				<div class="hero__offer-header">
+					<h1 class="hero__title">
+						Офисные перегородки по низким ценам
+					</h1>
+				</div>
+
+				<div class="hero__offer-body">
+					<p class="hero__subtitle">
+						Помогаем организовать пространство более 10 лет<br>
+						Экспресс-монтаж офисных перегородок от 2800 руб. кв/м
+					</p>
+				</div>
+
+				<div class="hero__offer-footer">
+					<!-- 1st button -->
+					<button class="btn">
+						<div class="btn__icon">
+							<img class="image" src="./assets/icons/icon_zamer.svg" alt="measuring">
+						</div>
+						<div class="btn__title">Заказать замер</div>
+					</button>
+					<!-- 2nd button -->
+					<button class="btn btn--hero-offer">
+						<div class="btn__icon">
+							<img class="image" src="./assets/icons/icon_consult.svg" alt="consultation">
+						</div>
+						<div class="btn__title">Консультация</div>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="hero__choice">
+
+			<div class="hero__choice-header">
+				<div class="hero__choice-title">От разработки проекта до монтажа!</div>
+				<div class="hero__choice-price">
+					<div class="hero__choice-price-value">Цена от: &nbsp;<span class="hl">2700 р. кв/м</span>
+					</div>
+					<div class="hero__choice-price-desc">Внимание! Уточняйте текущие цены на продукцию у <a href="#" class="hero__choice-managers">наших менеджеров</a></div>
+				</div>
+			</div>
+
+			<div class="hero__choice-footer">
+				<form action="#" class="hero-form">
+					<!-- 1st item -->
+					<div class="hero-form__select">
+						<label class="hero-form__select-label select-label">
+							Назначение
+							<div class="hero-form__select-wrapper"> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
+								<select class="hero-form__select-dropdown" name="function">
+									<option value="office_partition">Офисная перегородка</option>
+									<option value="office_partition_2">Офисная перегородка 2</option>
+									<option value="office_partition_3">Офисная перегородка 3</option>
+								</select>
+							</div>
+						</label>
+					</div>
+					<!-- 2nd item -->
+					<div class="hero-form__select">
+						<label class="hero-form__select-label select-label">
+							Тип стекла
+							<div class="hero-form__select-wrapper select-wrapper"> 
+								<select class="hero-form__select-dropdown select-dropdown" name="type">
+									<option value="glass_graphit">Стекло графит</option>
+									<option value="glass_graphit_2">Стекло графит 2</option>
+									<option value="glass_graphit_3">Стекло графит 3</option>
+								</select>
+							</div>
+						</label>
+					</div>
+					<!-- 3rd item -->
+					<div class="hero-form__select">
+						<label class="hero-form__select-label select-label">
+							Материал рамы (цвет)
+							<div class="hero-form__select-wrapper select-wrapper">
+								<select class="hero-form__select-dropdown select-dropdown" name="material">
+									<option value="alluminium_black">Аллюминий (черный)</option>
+									<option value="alluminium_black_2">Аллюминий (черный) 2</option>
+									<option value="alluminium_black_3">Аллюминий (черный) 3</option>
+								</select>
+							</div>
+						</label>
+					</div>
+					
+					<button class="btn btn--hero-choice">
+						<div class="btn__title">Перезвоните мне</div>
+					</button>
+			
+				</form>
+			</div>
+		</div>
+
+		<div class="hero__advantages">
+			<!-- 1st -->
+			<div class="hero__advantages-item hero__advantages-item--1st">
+				<div class="hero__advantages-icon">
+					<img class="image" src="./assets/icons/ic_1.svg" alt="factory">
+				</div>
+				<div class="hero__advantages-desc">
+					Быстрое производство и монтаж любых конструкций
+				</div>
+			</div>
+			<!-- 2nd -->
+			<div class="hero__advantages-item hero__advantages-item--2nd">
+				<div class="hero__advantages-icon">
+					<img class="image" src="./assets/icons/ic_2.svg" alt="quality">
+				</div>
+				<div class="hero__advantages-desc">
+					Долговечность и экологичность наших конструкций (ГОСТ)
+				</div>
+			</div>
+			<!-- 3rd -->
+			<div class="hero__advantages-item hero__advantages-item--3rd">
+				<div class="hero__advantages-icon">
+					<img class="image" src="./assets/icons/ic_3.svg" alt="worker">
+				</div>
+				<div class="hero__advantages-desc">
+					Профессиональные монтажники с опытом и чистая установка
+				</div>
+			</div>
+			<!-- 4th -->
+			<div class="hero__advantages-item hero__advantages-item--4th ">
+				<div class="hero__advantages-icon">
+					<img class="image" src="./assets/icons/ic_4.svg" alt="thumbs up">
+				</div>
+				<div class="hero__advantages-desc">
+					Отличная цена и гибкие усоловия сотрудничества по договору
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="hero__devider">
+
+</section>
+
+<!-- ===== 3. PRODUCT SECTION ===== -->
+
+<section class="product">
+
+	<div class="product__btn-calc">
+		<div class="product__btn-calc-wrapper"> <!-- для позиционирования hint -->
+			<button class="btn-square">
+				<svg class="svg-calc">
+					<use xlink:href="assets/icons/sprite.svg#calc"></use>
+				</svg>
+			</button>
+		</div>
+
+	</div>
+
+	<div class="product__btn-ring">
+		<div class="product__btn-ring-wrapper hint hint--right"> 
+			<button class="btn btn-square">
+				<svg class="svg-ring">
+					<use xlink:href="assets/icons/sprite.svg#ring"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="container">
+		
+		<h2 class="product__title">Наша продукция</h2>
+
+		<div class="product__grid grid-product">
+			<!-- 1st item -->
+			<div class="grid-product__item-back product__1st">
+				<div class="grid-product__image-back">
+					<img class="image" src="./assets/img/product/pic1.png" alt="partition">
+				</div>
+				<div class="grid-product__title-back">Стационарные стеклянные перегородки из закаленного стекла</div>
+				<div class="grid-product__desc-back">Производим изготовление и установку стационарных стеклянных перегородок для зонирования пространства в жилых, офисных и торговых помещениях.</div>
+				<ul class="grid-product__options-back">
+					<li class="grid-product__options-item-back">- &nbsp;Каркасные Simplex</li>
+					<li class="grid-product__options-item-back">- &nbsp;Цельностеклянные Nix</li>
+					<li class="grid-product__options-item-back">- &nbsp;С двойным стеклом Dual</li>
+				</ul>
+				<div class="grid-product__order-back">Под заказ от 5 дней</div>
+				<div class="grid-product__price-back">Цена от: <span class="hl">2700 р. кв/м</span></div>
+				<button class="btn btn--product">
+					<div class="btn__title">Подробнее</div>
+				</button>
+			</div>
+			
+			<!-- 2nd item -->
+			<div class="grid-product__item product__2nd"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic2.jpg" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Межкомнатные перегородки</div>
+						<div class="grid-product__desc-front">Перегородки из стекла для комфортного зонирования комнат.</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3600 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 3rd item -->
+			<div class="grid-product__item product__3rd"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic3.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Офисные перегородки</div>
+						<div class="grid-product__desc-front">Перегородки из стекла для выгораживания пространства в офисных помещениях.
+						</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">4100 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 4th item -->
+			<div class="grid-product__item product__4th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic4.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Раздвижные перегородки</div>
+						<div class="grid-product__desc-front">Раздвижные стеклянные перегородки из закаленного стекла.</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">4900 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 5th item -->
+			<div class="grid-product__item product__5th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic5.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Лофт перегородки</div>
+						<div class="grid-product__desc-front">Перегородки из стекла для комфортного зонирования комнат.</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3700 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 6th item -->
+			<div class="grid-product__item product__6th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic6.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Мобильные перегородки</div>
+						<div class="grid-product__desc-front">Перегородки из стекла для выгораживания пространства в офисныхпомещениях.
+						</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">2100 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 7th item -->
+			<div class="grid-product__item product__7th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic7.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Перегородки для зонирования </div>
+						<div class="grid-product__desc-front">Стеклянные перегородки для зонирования комнат.</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3700 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 8th item -->
+			<div class="grid-product__item product__8th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic8.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Торговые перегородки</div>
+						<div class="grid-product__desc-front">Перегородки из стекла для разграничения торговых помещений.</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">5100 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 9th item -->
+			<div class="grid-product__item product__9th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic9.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Перегородки в квартире</div>
+						<div class="grid-product__desc-front">Стационарные стеклянные перегородки для разграничения квартиры.</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3800 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!-- 10th item -->
+			<div class="grid-product__item product__10th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic10.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Недорогие перегородки</div>
+						<div class="grid-product__desc-front">Стеклянные перегородки эконом сегмента</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">2900 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!--11th item -->
+			<div class="grid-product__item product__11th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic11.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Душевые перегородки</div>
+						<div class="grid-product__desc-front">Стильные перегородки из стекла для ванной и душевых</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3200 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+			<!--12th item -->
+			<div class="grid-product__item product__12th"> 
+				<div class="grid-product__item-front">
+					<div class="grid-product__image-wrapper-front">
+						<div class="grid-product__image-front">
+							<img class="image" src="./assets/img/product/pic12.png" alt="partition">
+							<div class="grid-product__icon-front icon-search">	
+								<svg class="svg-search">
+									<use xlink:href="assets/icons/sprite.svg#search"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="grid-product__content-front">
+						<div class="grid-product__title-front">Складные перегородки</div>
+						<div class="grid-product__desc-front">Стеклянные перегородки, складываемые гармошкой</div>
+						<div class="grid-product__order-front">Под заказ от 5 дней</div>
+						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3000 р. кв/м</span></div>
+						<button class="btn btn--product">
+							<div class="btn__title">Подробнее</div>
+						</button>
+					</div>
+
+				</div>	
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 4. REQUEST SECTION ===== -->
+
+<section class="request">
+	<div class="container">
+		<div class="request__inner">
+
+			<div class="request__content">
+				<div class="request__title">Узнайте цену и сроки</div>
+				<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
+				<ul class="request__list">
+					<li class="request__list-item"><span class="hl">Цены: </span>от 2682 руб/м2</li>
+					<li class="request__list-item"><span class="hl">Сроки: </span>от 7 до 15 дней</li>
+					<li class="request__list-item"><span class="hl">Оплата: </span>безналичный/наличный расчет</li>
+				</ul>
+			</div>
+
+			<div class="request__form">
+				<form action="#" class="form-request grid-request">
+					<input class="form-request__input request__1st" type="text" name="name" placeholder="Ваше Имя">
+					<input class="form-request__input request__2nd" type="tel" name="tel" placeholder="Ваш Телефон">
+					<input class="form-request__input request__3rd" type="text" name="comment" placeholder="Комментарий*">
+					<button class="btn btn--request request__4th" type="submit">
+						<div class="btn__title">Отправить заявку</div>
+					</button>
+					<div class="form-request__pesonal-data request__5th">Нажимая на кнопку “Отправить заявку” вы подтверждате свое согласие на обработку <span class="hl">пользовательских данных</span></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 5. PORTFOLIO SECTION ===== -->
+
+<section class="portfolio">
+	<h2 class="portfolio__title">Реализованные проекты</h2>
+	<div class="portfolio__grid grid-portfolio">
+		
+		<!-- 1st item -->
+		<div class="grid-portfolio__item-front portfolio__1st">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-1.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+		
+		<!-- 2nd item -->
+		<div class="grid-portfolio__item-back back-item portfolio__2nd">
+			<div class="grid-portfolio__image-back">
+				<img class="image" src="./assets/img/portfolio/project-2.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__inner-back">
+				<div class="grid-portfolio__content-back">
+					<div class="grid-portfolio__title-back">Стационарные перегородки из закаленного стекла</div>
+					<div class="grid-portfolio__desc-back">Произвели изготовление и установку стационарных стеклянных перегородок для зонирования пространства в офисе, 
+						Краснопресненская наб. «Москва Сити»</div>
+					<div class="grid-portfolio__order-back">Изготовление и монтаж - 10 дней</div>
+					<div class="grid-portfolio__price-back">Цена: &nbsp; <span class="hl">57 500 Р</span></div>
+				</div>
+				<div class="grid-portfolio__icon-back">
+					<button class="btn-square btn-square--portfolio-arrow">
+						<svg class="svg-arrow-right">
+							<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 3rd item -->
+		<div class="grid-portfolio__item-front portfolio__3rd">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-3.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+
+		<!-- 4th item -->
+		<div class="grid-portfolio__item-front portfolio__4th">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-4.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+
+		<!-- 5th item -->
+		<div class="grid-portfolio__item-front portfolio__5th">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-5.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+
+		<!-- 6th item -->
+		<div class="grid-portfolio__item-front portfolio__6th">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-6.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+
+		<!-- 7th item -->
+		<div class="grid-portfolio__item-front portfolio__7th">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-7.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+		
+		<!-- 8th item -->
+		<div class="grid-portfolio__item-front portfolio__8th">
+			<div class="grid-portfolio__image-front">
+				<img class="image" src="./assets/img/portfolio/project-8.jpg" alt="partition">
+			</div>
+			<div class="grid-portfolio__icon-front icon-search">
+				<svg class="svg-search">
+					<use xlink:href="assets/icons/sprite.svg#search"></use>
+				</svg>
+			</div>
+		</div>
+
+	</div>
+	
+	<button class="btn btn--portfolio-more">
+		<div class="btn__title">Показать ещё</div>
+		<div class="btn__icon">
+			<svg class="svg-arrow-down">
+				<use xlink:href="assets/icons/sprite.svg#arrow-down"></use>
+			</svg>
+		</div>
+	</button>
+
+	
+</section>
+
+
+<!-- ===== 6. PORTFOLIO SECTION ===== -->
+
+<section class="glasstype">
+	<div class="container">
+		<div class="glasstype__headline headline">
+			<h2 class="headline__title">Тип стекла для стеклянных перегородок</h2>
+			<a class="headline__consultation" href="#">Нужна консультация?</a>
+		</div>
+		<div class="glasstype__grid grid-glasstype">
+
+			<!-- 1st item -->
+			<div class="grid-glasstype__item grid-glasstype__1st">
+				<div class="grid-glasstype__header">
+					<img class="image" src="./assets/img/glasstype/partition_1.jpg" alt="partition">
+					<div class="grid-glasstype__buttons-block">
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-left--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+							</svg>
+						</button>
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-right--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				
+
+				<div class="grid-glasstype__body">
+						<div class="grid-glasstype__thumbnail">
+							<div class="grid-glasstype__thumbnail-inner">
+								<img class="image" src="./assets/img/glasstype/glass_type_tempered.png" alt="glass">
+							</div>
+						</div>
+						<div class="grid-glasstype__content">
+							<div class="grid-glasstype__title">Закаленное стекло</div>
+							<div class="grid-glasstype__desc">Листовое стекло прошедшее термообработку нагревом до 600-700 град.С и быстрым равномерным охлаждением холодным воздухом. Поверхность каленого стекла упрочняется в несколько раз, а за счет остаточного напряжения.</div>
+						</div>
+				</div>
+			</div>
+
+			<!-- 2nd item -->
+			<div class="grid-glasstype__item grid-glasstype__2nd">
+				<div class="grid-glasstype__header">
+					<img class="image" src="./assets/img/glasstype/partition_2.jpg" alt="partition">
+					<div class="grid-glasstype__buttons-block">
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-left--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+							</svg>
+						</button>
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-right--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				
+
+				<div class="grid-glasstype__body">
+						<div class="grid-glasstype__thumbnail">
+							<div class="grid-glasstype__thumbnail-inner">
+								<img class="image" src="./assets/img/glasstype/glass_type_triplex.png" alt="glass">
+							</div>
+						</div>
+						<div class="grid-glasstype__content">
+							<div class="grid-glasstype__title">Триплекс</div>
+							<div class="grid-glasstype__desc">Это комбинация из нескольких листов закаленного стекла, с прослойкой из жидкого состава полимеризуемого под воздействием УФ излучения. Благодаря многослойной структуре материал выдерживает значительные ударные и нагрузки.</div>
+						</div>
+				</div>
+			</div>
+
+			<!-- 3rd item -->
+			<div class="grid-glasstype__item grid-glasstype__3rd">
+				<div class="grid-glasstype__header">
+					<img class="image" src="./assets/img/glasstype/partition_3.jpg" alt="partition">
+					<div class="grid-glasstype__buttons-block">
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-left--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+							</svg>
+						</button>
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-right--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				
+
+				<div class="grid-glasstype__body">
+						<div class="grid-glasstype__thumbnail">
+							<div class="grid-glasstype__thumbnail-inner">
+								<img class="image" src="./assets/img/glasstype/glass_type_reinforced.png" alt="glass">
+							</div>
+						</div>
+						<div class="grid-glasstype__content">
+							<div class="grid-glasstype__title">Армирtованное</div>
+							<div class="grid-glasstype__desc">Стекло с внутренней арматурной сеткой. Обладает высокой конструкционной прочностью, безопасно для окружающих рекомендуется к установке в общественных местах с высокой проходимостью.</div>
+						</div>
+				</div>
+			</div>
+
+			<!-- 4th item -->
+			<div class="grid-glasstype__item grid-glasstype__4th">
+				<div class="grid-glasstype__header">
+					<img class="image" src="./assets/img/glasstype/partition_4.jpg" alt="partition">
+					<div class="grid-glasstype__buttons-block">
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-left--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+							</svg>
+						</button>
+						<button class="btn-square btn-square--glasstype">
+							<svg class="svg-arrow-right--glasstype">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				
+
+				<div class="grid-glasstype__body">
+						<div class="grid-glasstype__thumbnail">
+							<div class="grid-glasstype__thumbnail-inner">
+								<img class="image" src="./assets/img/glasstype/glass_type_smart.png" alt="glass">
+							</div>
+						</div>
+						<div class="grid-glasstype__content">
+							<div class="grid-glasstype__title">Смарт стекло</div>
+							<div class="grid-glasstype__desc">Smart window – умные окна, стекло с изменяемыми оптическими свойствами (светопропускание, матовость и и др). Изменение физико-химических свойств, в т.ч. прозрачности происходит под действием электрического тока.</div>
+						</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 7. DESIGN SECTION ===== -->
+
+<section class="design">
+	<div class="container">
+		<div class="design__headline headline">
+			<h2 class="headline__title">Оформление стеклянных перегородок </h2>
+			<a class="headline__consultation" href="#">Нужна консультация?</a>
+		</div>
+	
+		<div class="design__inner">
+			<!-- image block -->
+			<div class="design__image">
+				<div class="design__image-buttons-block">
+					<button class="btn-square btn-square--design">
+						<svg class="svg-arrow-left--design">
+							<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+						</svg>
+					</button>
+					<button class="btn-square btn-square--design">
+						<svg class="svg-arrow-right--design">
+							<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+						</svg>
+					</button>
+				</div>
+				<img class="image" src="./assets/img/design/rendered.jpg" alt="patritions">
+			</div>
+			<!-- content block -->
+			<div class="design__content">
+				<div class="design__content-title">Прозрачное Стекло</div>
+				<div class="design__content-desc">Специальная обработка поверхности с матовым узором надежно укроет от посторонних глаз все происходящее за перегородкой. Матовое стекло лучше противостоит загрязнению, не требует интенсивного ухода как за прозрачным стеклом, создает эффект глухой стены.</div>
+				<div class="design__content-glass-list glass-design">
+			
+					<!-- clean glass -->
+					<div class="design__content-glass-item glass-design__item">
+						<div class="glass-design__image">
+							<img class="image" src="./assets/img/design/glass_clean.png" alt="glass">
+						</div>
+						<div class="glass-design__caption-wrapper">
+							<div class="glass-design__caption">Прозрачное</div>
+						</div>
+					</div>
+					<!-- mat glass -->
+					<div class="design__content-glass-item glass-design__item">
+						<div class="glass-design__image">
+							<img class="image" src="./assets/img/design/glass_mat.png" alt="glass">
+						</div>
+						<div class="glass-design__caption-wrapper design__type-checked">
+							<div class="glass-design__caption">Матовое</div>
+						</div>
+					</div>
+					<!-- laser glass -->
+					<div class="design__content-glass-item glass-design__item">
+						<div class="glass-design__image design__style-checked">
+							<img class="image" src="./assets/img/design/glass_laser.png" alt="glass">
+						</div>
+						<div class="glass-design__caption-wrapper">
+							<div class="glass-design__caption">Лазерная <br>гравировка</div>
+						</div>
+					</div>
+					<!-- bronze glass -->
+					<div class="design__content-glass-item glass-design__item">
+						<div class="glass-design__image">
+							<img class="image" src="./assets/img/design/glass_bronse.png" alt="glass">
+						</div>
+						<div class="glass-design__caption-wrapper">
+							<div class="glass-design__caption">Стекло <br>бронза</div>
+						</div>
+					</div>
+					<!-- graphit glass-->
+					<div class="design__content-glass-item glass-design__item">
+						<div class="glass-design__image">
+							<img class="image" src="./assets/img/design/glass_graphit.png" alt="glass">
+						</div>
+						<div class="glass-design__caption-wrapper">
+							<div class="glass-design__caption">Стекло <br>графит</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="design__content-consultation">Бесплатная консультация и вызов замерщика</div>
+				<ul class="design__content-actions-list">
+					<li class="design__content-actions-item">Подберем конструкцию</li>
+					<li class="design__content-actions-item">Сделаем замер</li>
+					<li class="design__content-actions-item">Рассчитаем стоимость</li>
+				</ul>
+				<div class="design__content-button-block">
+					<button class="btn btn--design-content">
+						<div class="btn__title">Вызвать замерщика</div>
+					</button>
+					<button class="btn btn--design-content btn--design-content-secondary">
+						<div class="btn__title">Нужна консультация</div>
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 8. CALCULATOR SECTION ===== -->
+
+<section class="calculator">
+	<div class="container">
+
+		<div class="calculator__headline headline">
+			<h2 class="headline__title">Калькулятор стеклянных перегородок</h2>
+			<a class="headline__consultation" href="#">Нужна консультация?</a>
+		</div>
+
+		<div class="calculator__constructor constructor">
+
+			<!-- constructor-type -->
+			<div class="constructor__type constructor__number">
+
+				<div class="constructor__header">
+					<div class="constructor__header-title constructor__number one">Тип перегородки</div>
+					<div class="constructor__header-icon">
+						<svg class="svg-check--orange">
+							<use xlink:href="assets/icons/sprite.svg#check"></use>
+						</svg>
+					</div>
+				</div>
+				
+				<ul class="constructor__type-list">
+					<!-- 1st item -->
+					<li class="constructor__type-item constructor__type-checked">
+						<div class="constructor__type-image">
+							<div class="constructor__type-image-size--1">
+								<img class="image" src="./assets/img/calculator/calc_frame1.png" alt="glass partiton"></div>
+						</div>
+						<div class="constructor__type-caption">Перегородка <br>без углов</div>
+					</li>
+					<!-- 2nd item -->
+					<li class="constructor__type-item">
+						<div class="constructor__type-image">
+							<div class="constructor__type-image-size--2">
+								<img class="image" src="./assets/img/calculator/calc_frame2.png" alt="glass partiton"></div>
+						</div>
+						<div class="constructor__type-caption">Перегородка c <br>одним углом</div>
+					</li>
+					<!-- 3rd item -->
+					<li class="constructor__type-item">
+						<div class="constructor__type-image">
+							<div class="constructor__type-image-size--3">
+								<img class="image" src="./assets/img/calculator/calc_frame3.png" alt="glass partiton"></div>
+						</div>
+						<div class="constructor__type-caption">Перегородка c <br>двумя углами</div>
+					</li>
+					<!-- 4th item -->
+					<li class="constructor__type-item">
+						<div class="constructor__type-image">
+							<div class="constructor__type-image-size--4">
+								<img class="image" src="./assets/img/calculator/calc_frame4.png" alt="glass partiton"></div>
+						</div>
+						<div class="constructor__type-caption">Перегородка c <br>тремя углами</div>
+					</li>
+					<!-- 5th item -->
+					<li class="constructor__type-item">
+						<div class="constructor__type-image">
+							<div class="constructor__type-image-size--5">
+								<img class="image" src="./assets/img/calculator/calc_frame5.png" alt="glass partiton"></div>
+						</div>
+						<div class="constructor__type-caption">Перегородка c <br>черырьмя углами</div>
+					</li>		
+
+				</ul>
+			</div>
+			
+			<!-- constructor-view -->
+			<div class="constructor__view">
+
+				<div class="constructor__header">
+					<div class="constructor__header-title constructor__number two">Вид перегородки</div>
+					<div class="constructor__header-icon">
+						<svg class="svg-check--grey">
+							<use xlink:href="assets/icons/sprite.svg#check"></use>
+						</svg>
+					</div>
+				</div>
+
+				<div class="constructor__view-body">
+					<div class="constructor__view-image">
+						<div class="constructor__view-image-size">
+							<img class="image" src="./assets/img/calculator/calc_frame2.png" alt="glass partiton">
+						</div>
+					</div>
+					<div class="constructor__view-caption">Перегородка с четыремя углами <span class="hl">2200 x 1500 мм</span></div>
+				</div>
+			</div>
+
+			<!-- constructor__option -->
+			<div class="constructor__options">
+
+				<div class="constructor__header">
+					<div class="constructor__header-title constructor__number three">Параметры перегородки</div>
+					<div class="constructor__header-icon">
+						<svg class="svg-check--grey">
+							<use xlink:href="assets/icons/sprite.svg#check"></use>
+						</svg>
+					</div>
+				</div>
+
+				<form action="#" class="constructor__options-form grid-calculator">
+					<!-- 1st item -->
+					<div class="grid-calculator__1st">
+						<label for="calculator-height" class="calculator__label">Высота, мм</label>
+						<input class="calculator__input input-number" id="calculator-height" type="number" name="height" placeholder="2200">
+					</div>
+					<!-- 2nd item -->
+					<div class="grid-calculator__2nd">
+						<label for="calculator-width" class="calculator__label">Ширина, мм</label>
+						<input class="calculator__input input-number" id="calculator-width" type="number" name="width" placeholder="1500">
+					</div>
+					<!-- 3rd item -->
+					<div class="grid-calculator__3rd">
+						<label class="calculator__label select-label">
+							Материал остекления
+							<div class="calculator__select-wrapper select-wrapper"> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
+								<select class="calculator__select-dropdown select-dropdown" name="material">
+									<option value="alluminium_mat">Алюмний, матовое стекло</option>
+									<option value="alluminium_clean">Алюмний, прозрачное стекло</option>
+								</select>
+							</div>
+						</label>
+					</div>
+					<!-- 4th item -->
+					<div class="grid-calculator__4th">
+						<label class="calculator__label select-label">
+							Размер двери
+							<div class="calculator__select-wrapper select-wrapper "> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
+								<select class="calculator__select-dropdown select-dropdown" name="door_size">
+									<option value="single_door">Одинарная дверь</option>
+									<option value="double_door">Двойная дверь</option>
+								</select>
+							</div>
+						</label>
+					</div>
+					<!-- 5th item -->
+					<div class="grid-calculator__5th">
+						<input class="calculator__input input-number calculator__input--square" type="number" name="quantity" placeholder="1" id="calculator-quantity">
+						<label for="calculator-quantity" class="calculator__label">Количество перегородок</label>
+					</div>
+					<!-- 6th item -->
+					<div class="grid-calculator__6th">
+						<input class="calculator__input calculator__input--square" type="checkbox" name="delivery" id="calculator-quantity">
+						<label for="calculator-delivery" class="calculator__label">Доставка, погрузка в пределах МКАД</label>
+					</div>
+					<!-- 7th item -->
+					<div class="grid-calculator__7th">
+						<div class="calculator__price">Цена от: &nbsp;<span class="hl">45 500 Р
+						</span></div>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+		<div class="calculator__request">
+			<button class="btn btn--calculator">
+				<div class="btn__title">Получить точный рассчет проекта бесплатно</div>
+			</button>
+			<div class="calculator__personal-data">Нажимая на кнопку “Отправить заявку” вы<br> подтверждате свое согласие на обработку<br><span class="hl">пользовательских данных</span></div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- ===== 9. CHARGE SECTION ===== -->
+
+<section class="charge">
+	<div class="container">
+
+		<div class="charge__headline headline">
+			<h2 class="headline__title">Цены на закаленное стекло для перегородок</h2>
+			<a class="headline__consultation" href="#">Нужна консультация?</a>
+		</div>
+
+		<!-- 1st item -->
+		<div class="charge__item charge__item--first">
+
+			<div class="charge__item-icon">
+				<div class="charge__item-icon-size--1">
+					<img class="image" src="./assets/icons/icon_price_1.svg" alt="thumbs up"></div>
+			</div>
+
+			<div class="charge__item-content">
+				<div class="charge__item-title">Цены на стеклянные перегородки</div>
+				<div class="charge__item-desc">Цены стартуют от отметки 3900 руб. за 1 кв.м. и складываются от толщины и типа стекла, производителя фурнитуры, объема заказа, трудозатрат на доставку и подъем на этаж, инженерных особенностей объекта и сложности монтажа.</div>
+			</div>
+
+			<div class="charge__item-price">
+				<div class="charge__item-price-inner">
+					Цены от<br><span class="hl">3 900 Р</span><br>за 1 кв.м.
+				</div>
+			</div>
+		</div>
+
+		<!-- 2nd item -->
+		<div class="charge__item charge__item--second">
+
+			<div class="charge__item-icon">
+				<div class="charge__item-icon-size--2">
+					<img class="image" src="./assets/icons/icon_price_2.svg" alt="coins"></div>
+			</div>
+
+			<div class="charge__item-content">
+				<div class="charge__item-title">Цена на установку</div>
+				<div class="charge__item-desc">Стартует от отметки 1000 руб. за 1 кв.м. На стоимость влияет общая площадь, толщина стекла, количества технологических операций. При цене монтажа более 20 тыс. руб. предоставляется скидка до 15 %.</div>
+			</div>
+
+			<div class="charge__item-price">
+				<div class="charge__item-price-inner">
+					Цены от<br><span class="hl">1 000 Р</span><br>за 1 кв.м.
+				</div>
+			</div>
+		</div>
+
+		<!-- 3rd item -->
+		<div class="charge__item charge__item--third">
+
+			<div class="charge__item-icon">
+				<div class="charge__item-icon-size--3">
+					<img class="image" src="./assets/icons/icon_price_3.svg" alt="coins"></div>
+			</div>
+
+			<div class="charge__item-content">
+				<div class="charge__item-title">Окончательная стоимость</div>
+				<div class="charge__item-desc">Стартуют от отметки 3900 руб. за 1 кв.м. и складываются от толщины и типа стекла, производителя фурнитуры, объема заказа, трудозатрат на доставку и подъем на этаж, инженерных особенностей объекта и сложности монтажа.</div>
+			</div>
+
+			<div class="charge__item-price">
+				<div class="charge__item-price-inner">
+					При заказе от<br><span class="hl">50 000 Р</span><br><span class="underlined">Скидка 10%</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
