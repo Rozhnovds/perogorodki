@@ -44,6 +44,7 @@
 
 
 <!-- ===== 2. HERO SECTION ===== -->
+<main>
 
 <section class="hero">
 	<div class="container">
@@ -57,8 +58,8 @@
 		</div>
 
 		<div class="hero__mark hero__mark--2nd hero__mark--active">
-			<div class="hero__mark-wrapper hint hint--left"><!-- для позиционирования псевдоэлемента -->
-				<img class="image" src="./assets/icons/mark_active_down.svg" alt="mark">;
+			<div class="hero__mark-wrapper hint--left"><!-- для позиционирования псевдоэлемента -->
+				<img class="image" src="./assets/icons/mark_active_down.svg" alt="mark">
 			</div>
 		</div>
 
@@ -231,7 +232,7 @@
 	</div>
 
 	<div class="product__btn-ring">
-		<div class="product__btn-ring-wrapper hint hint--right"> 
+		<div class="product__btn-ring-wrapper hint--right"> 
 			<button class="btn btn-square">
 				<svg class="svg-ring">
 					<use xlink:href="assets/icons/sprite.svg#ring"></use>
@@ -941,10 +942,10 @@
 				</div>
 
 				<div class="design__content-consultation">Бесплатная консультация и вызов замерщика</div>
-				<ul class="design__content-actions-list">
-					<li class="design__content-actions-item">Подберем конструкцию</li>
-					<li class="design__content-actions-item">Сделаем замер</li>
-					<li class="design__content-actions-item">Рассчитаем стоимость</li>
+				<ul class="design__content-action-list">
+					<li class="design__content-action-item">Подберем конструкцию</li>
+					<li class="design__content-action-item">Сделаем замер</li>
+					<li class="design__content-action-item">Рассчитаем стоимость</li>
 				</ul>
 				<div class="design__content-button-block">
 					<button class="btn btn--design-content">
@@ -977,7 +978,7 @@
 			<div class="constructor__type">
 
 				<div class="constructor__header">
-					<div class="constructor__header-title constructor__number one">Тип перегородки</div>
+					<div class="constructor__header-title number-before--1">Тип перегородки</div>
 					<div class="constructor__header-icon">
 						<svg class="svg-check--orange">
 							<use xlink:href="assets/icons/sprite.svg#check"></use>
@@ -1034,7 +1035,7 @@
 			<div class="constructor__view">
 
 				<div class="constructor__header">
-					<div class="constructor__header-title two">Вид перегородки</div>
+					<div class="constructor__header-title number-before--2">Вид перегородки</div>
 					<div class="constructor__header-icon">
 						<svg class="svg-check--grey">
 							<use xlink:href="assets/icons/sprite.svg#check"></use>
@@ -1056,7 +1057,7 @@
 			<div class="constructor__options">
 
 				<div class="constructor__header">
-					<div class="constructor__header-title constructor__number three">Параметры перегородки</div>
+					<div class="constructor__header-title number-before--3">Параметры перегородки</div>
 					<div class="constructor__header-icon">
 						<svg class="svg-check--grey">
 							<use xlink:href="assets/icons/sprite.svg#check"></use>
@@ -1204,7 +1205,832 @@
 	</div>
 </section>
 
+<!-- ===== 10. PRICELIST SECTION ===== -->
 
+<section class="pricelist">
+	<div class="container">
+		<h2 class="pricelist__title">Прайс-лист</h2>
+
+		<ul class="pricelist__tab-list">
+			<div class="pricelist__tab-list-item pricelist__tab-list-item--active" data-tab="tab-1">Типовые решения</div>
+			<div class="pricelist__tab-list-item" data-tab="tab-2">Недорогие решения</div>
+			<div class="pricelist__tab-list-item" data-tab="tab-3">Варианты остекления</div>
+			<div class="pricelist__tab-list-item" data-tab="tab-4">Цены на работы</div>
+			<div class="pricelist__tab-list-item" data-tab="tab-5">Дополнительные услуги</div>	
+		</ul>
+		
+		<!-- 1st item -->
+		<div class="pricelist__tab-content" data-tab-content id="tab-1">
+			<table class="pricelist__table table-pricelist">
+				<!-- thead -->
+				<thead class="table-pricelist__head">
+					<tr class="table-pricelist__row">
+						<th class="table-pricelist__header">Тип перегородки</th>
+						<th class="table-pricelist__header">Цена:</th>
+					</tr>
+				</thead>
+				<!-- tbody -->
+				<tbody class="table-pricelist__body">
+					<!-- 1st row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Прямая без двери. Обычное стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 19 800 руб. за кв. м</td>
+					</tr>
+					<!-- 2nd row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Прямая без двери. Матовое стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 13 500 руб. за кв. м</td>
+					</tr>
+					<!-- 3rd row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Угловая 90° с распашной дверью Обычное стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 16 500 руб. за кв. м</td>
+					</tr>
+					<!-- 4th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Прямая с распашной дверью Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 19 800 руб. за кв. м</td>
+					</tr>
+					<!-- 5th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Перегородка угловая с двумя раздвижными дверями. Обычное стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 13 500 руб. за кв. м</td>
+					</tr>
+					<!-- 6th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Прямая без двери. Обычное стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 19 800 руб. за кв. м</td>
+					</tr>
+					<!-- 7th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Прямая без двери. Матовое стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 13 500 руб. за кв. м</td>
+					</tr>
+					<!-- 8th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Угловая 90° с распашной дверью Обычное стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 16 500 руб. за кв. м</td>
+					</tr>
+					<!-- 9th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Прямая с распашной дверью Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 19 800 руб. за кв. м</td>
+					</tr>
+					<!-- 10th row -->
+					<tr class="table-pricelist__row">
+						<td class="table-pricelist__data">Перегородка угловая с двумя раздвижными дверями. Обычное стекло. Размеры: 400x300</td>
+						<td class="table-pricelist__data">от 13 500 руб. за кв. м</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+
+		<div class="pricelist__consultation">
+			<div class="pricelist__consultation-content">
+				<div class="pricelist__consultation-title">Бесплатная консультация и вызов замерщика</div>
+				<ul class="pricelist__consultation-action-list">
+					<li class="pricelist__consultation-action-item">Подберем конструкцию</li>
+					<li class="pricelist__consultation-action-item">Сделаем замер</li>
+					<li class="pricelist__consultation-action-item">Рассчитаем стоимость</li>
+				</ul>
+			</div>
+			<div class="pricelist__consultation-buttons-block">
+				<button class="btn btn--pricelist">
+					<div class="btn__title">Вызвать замерщика</div>
+				</button>
+				<button class="btn btn--pricelist btn--pricelist-secondary">
+					<div class="btn__title">Нужна консультация</div>
+				</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- ===== 11. STEPS SECTION ===== -->
+
+<section class="steps">
+	<div class="container">
+		<h2 class="steps__title">Порядок монтажа стеклянных перегородок</h2>
+
+		<div class="steps__grid grid-steps">
+
+			<!-- 1st item -->
+			<div class="grid-steps__1st">
+				<div class="grid-steps__item">
+					<div class="grid-steps__content">
+						<div class="grid-steps__title number-before--1">Подготовительный этап</div>
+						<div class="grid-steps__desc">Выполняется подготовка пола, стен и потолка, устраняются дефекты поверхностей, при необходимости прокладываются транзитные коммуникации (интернет, телефония, освещение, отопление)</div>
+					</div>
+					<div class="grid-steps__benefits">
+						<div class="grid-steps__benefits-icon">
+							<div class="grid-steps__benefits-icon-size--1">
+								<img class="image" src="./assets/icons/icon_step_1.svg" alt="project">
+							</div>
+						</div>
+						<ul class="grid-steps__benefits-list">
+							<li class="grid-steps__benefits-list-item check-before">Приезжает наша бринада</li>
+							<li class="grid-steps__benefits-list-item check-before">Выравниваем стены комнаты</li>
+							<li class="grid-steps__benefits-list-item check-before">Готовим помещение</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 2nd item -->
+			<div class="grid-steps__2nd">
+				<div class="grid-steps__item">
+					<div class="grid-steps__content">
+						<div class="grid-steps__title number-before--2">Разметка</div>
+						<div class="grid-steps__desc">По лазерному уровню отбиваются<br>места крепления профилей,<br>закладных и направляющих в соответствии с проектом, наносятся контрольные точки маркером</div>
+					</div>
+					<div class="grid-steps__benefits">
+						<div class="grid-steps__benefits-icon">
+							<div class="grid-steps__benefits-icon-size--2">
+								<img class="image" src="./assets/icons/icon_step_2.svg" alt="measurements">
+							</div>
+						</div>
+						<ul class="grid-steps__benefits-list">
+							<li class="grid-steps__benefits-list-item check-before">Разметка помещения</li>
+							<li class="grid-steps__benefits-list-item check-before">Размечаем по уровню</li>
+							<li class="grid-steps__benefits-list-item check-before">Готовим помещение</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 3rd item -->
+			<div class="grid-steps__3rd">
+				<div class="grid-steps__item">
+					<div class="grid-steps__content">
+						<div class="grid-steps__title number-before--3">Монтаж</div>
+						<div class="grid-steps__desc">Определение последовательности монтажа – исходя из конструктивных особенностей объекта и геометрических размеров перегородок составляется пооперационный план и очередность проведения работ</div>
+					</div>
+					<div class="grid-steps__benefits">
+						<div class="grid-steps__benefits-icon">
+							<div class="grid-steps__benefits-icon-size--3">
+								<img class="image" src="./assets/icons/icon_step_3.svg" alt="screw">
+							</div>
+						</div>
+						<ul class="grid-steps__benefits-list">
+							<li class="grid-steps__benefits-list-item check-before">Доставляем материалы</li>
+							<li class="grid-steps__benefits-list-item check-before">Расрпделяем задачи</li>
+							<li class="grid-steps__benefits-list-item check-before">Готовимся к сборке</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 4th item -->
+			<div class="grid-steps__4th">
+				<div class="grid-steps__item">
+					<div class="grid-steps__content">
+						<div class="grid-steps__title number-before--4">Сборка</div>
+						<div class="grid-steps__desc">Выполняются работы по комплектованию стеклянных перегородок. Направляющие профили, несущие кронштейны и другие крепёжные элементы надежно закрепляются к основанию. Стеклянные блоки фиксируются в проёмах.</div>
+					</div>
+					<div class="grid-steps__benefits">
+						<div class="grid-steps__benefits-icon">
+							<div class="grid-steps__benefits-icon-size--4">
+								<img class="image" src="./assets/icons/icon_step_4.svg" alt="instrument">
+							</div>
+						</div>
+						<ul class="grid-steps__benefits-list">
+							<li class="grid-steps__benefits-list-item check-before">Крепление констукции</li>
+							<li class="grid-steps__benefits-list-item check-before">Фиксация на местах</li>
+							<li class="grid-steps__benefits-list-item check-before">Окончание установки</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 5th item -->
+			<div class="grid-steps__5th">
+				<div class="grid-steps__item">
+					<div class="grid-steps__content">
+						<div class="grid-steps__title number-before--5">Регулировка</div>
+						<div class="grid-steps__desc">После окончания монтажных работ выполняется регулировка фурнитуры подвижных частей, выставляются технологические зазоры, устраняются перекосы и производится окончательная подгонка отдельных элементов и др</div>
+					</div>
+					<div class="grid-steps__benefits">
+						<div class="grid-steps__benefits-icon">
+							<div class="grid-steps__benefits-icon-size--5">
+								<img class="image" src="./assets/icons/icon_step_5.svg" alt="measurements">
+							</div>
+						</div>
+						<ul class="grid-steps__benefits-list">
+							<li class="grid-steps__benefits-list-item check-before">Затяжка всех элементов</li>
+							<li class="grid-steps__benefits-list-item check-before">Окончательный монтаж</li>
+							<li class="grid-steps__benefits-list-item check-before">Тестирование на нагрузку</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 6th item -->
+			<div class="grid-steps__6th">
+				<div class="grid-steps__item">
+					<div class="grid-steps__content">
+						<div class="grid-steps__title number-before--6">Тестирование</div>
+						<div class="grid-steps__desc">Выполняется визуальная и инструментальная проверка работоспособности всех составляющих, проверяется надежность крепления отдельных механизмов, прочность и стабильность конструкции в целом</div>
+					</div>
+					<div class="grid-steps__benefits">
+						<div class="grid-steps__benefits-icon">
+							<div class="grid-steps__benefits-icon-size--6">
+								<img class="image" src="./assets/icons/icon_step_6.svg" alt="thumbs up">
+							</div>
+						</div>
+						<ul class="grid-steps__benefits-list">
+							<li class="grid-steps__benefits-list-item check-before">Презентация работы</li>
+							<li class="grid-steps__benefits-list-item check-before">Подписание документов</li>
+							<li class="grid-steps__benefits-list-item check-before">Сдача проекта</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- ===== 12. BENEFITS SECTION ===== -->
+
+<section class="benefits">
+	<div class="container">
+		<h2 class="benefits__title">Десять важных преимуществ</h2>
+		<div class="benefits__desc">Закажите установку стеклянных перегородок в нашей компании и получите ряд приятных преимуществ по разумным ценам:</div>
+
+		<div class="benefits__grid grid-benefits">
+			<!-- 1st item -->
+			<div class="grid-benefits__1st">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">01</div>
+					<div class="grid-benefits__caption">Красивый и<br>современный дизайн<br>наших перегородок</div>
+				</div>
+			</div>
+			<!-- 2nd item -->
+			<div class="grid-benefits__2nd">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">02</div>
+					<div class="grid-benefits__caption">Трансформация под<br>разные мероприятия и<br>любые задачи</div>
+				</div>
+			</div>
+			<!-- 3rd item -->
+			<div class="grid-benefits__3rd">
+				<div class="grid-benefits__item grid-benefits__checked">
+					<div class="grid-benefits__number">03</div>
+					<div class="grid-benefits__caption">Оригинальный формат офиса, торговой точки или представительства компании</div>
+				</div>
+			</div>
+			<!-- 4th item -->
+			<div class="grid-benefits__4th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">04</div>
+					<div class="grid-benefits__caption">Выделение отдельной<br>спальной или рабочей зоны<br>в общей комнате</div>
+				</div>
+			</div>
+			<!-- 5th item -->
+			<div class="grid-benefits__5th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">05</div>
+					<div class="grid-benefits__caption">Снижение уровня шума и отвлекающих факторов на рабочем месте сотрудников</div>
+				</div>
+			</div>
+			<!-- 6th item -->
+			<div class="grid-benefits__6th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">06</div>
+					<div class="grid-benefits__caption">Разграничение зон для<br>отдыха и для работы<br>вашего персонала</div>
+				</div>
+			</div>
+			<!-- 7th item -->
+			<div class="grid-benefits__7th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">07</div>
+					<div class="grid-benefits__caption">Наполнение выделенных помещений естественным светом и экономия на электроэнергии</div>
+				</div>
+			</div>
+			<!-- 8th item -->
+			<div class="grid-benefits__8th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">08</div>
+					<div class="grid-benefits__caption">Без продолжительных работ, перегородок и дорогостоящих отделочных работ</div>
+				</div>
+			</div>
+			<!-- 9th item -->
+			<div class="grid-benefits__9th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">09</div>
+					<div class="grid-benefits__caption">Новые рабочие места при сохранении исходной площади помещения</div>
+				</div>
+			</div>
+			<!-- 10th item -->
+			<div class="grid-benefits__10th">
+				<div class="grid-benefits__item">
+					<div class="grid-benefits__number">10</div>
+					<div class="grid-benefits__caption">Дополнительный заработок<br>на арендной плате</div>
+				</div>
+			</div>
+			<!-- 11th item -->
+			<div class="grid-benefits__11th">
+				<div class="grid-benefits__item">
+					<img class="image" src="./assets/img/big_picture.png" alt="partitians">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+
+<!-- ===== 14. FURNITURE SECTION ===== -->
+
+<section class="furnirute">
+	<div class="container">
+		<div class="furniture__headline headline">
+			<h2 class="headline__title">Мы применяем фурнитуру и комплектующие<br>от проверенных производителей</h2>
+			<a class="headline__consultation" href="#">Нужна консультация?</a>
+		</div>
+
+		<div class="furniture__brands">
+			<div class="furniture__brands-content">
+				<div class="furniture__brands-logo-list">
+					<!-- 1st item -->
+					<div class="furniture__brands-logo-item">
+						<div class="furniture__brands-logo-icon--1">
+							<img class="image" src="./assets/img/furniture/furniture_logo_1.png" alt="logo">
+						</div>
+						<div class="furniture__brands-logo-caption furniture__brands--checked">CASMA</div>
+					</div>
+					<!-- 2nd item -->
+					<div class="furniture__brands-logo-item">
+						<div class="furniture__brands-logo-icon--2">
+							<img class="image" src="./assets/img/furniture/furniture_logo_2.png" alt="logo">
+						</div>
+						<div class="furniture__brands-logo-caption">HA iDeli</div>
+					</div>
+					<!-- 3rd item -->
+					<div class="furniture__brands-logo-item">
+						<div class="furniture__brands-logo-icon--3">
+							<img class="image" src="./assets/img/furniture/furniture_logo_3.png" alt="logo">
+						</div>
+						<div class="furniture__brands-logo-caption">Dorma</div>
+					</div>
+					<!-- 4th item -->
+					<div class="furniture__brands-logo-item">
+						<div class="furniture__brands-logo-icon--4">
+							<img class="image" src="./assets/img/furniture/furniture_logo_4.png" alt="logo">
+						</div>
+						<div class="furniture__brands-logo-caption">Hafele</div>
+					</div>
+					<!-- 5th item -->
+					<div class="furniture__brands-logo-item">
+						<div class="furniture__brands-logo-icon--5">
+							<img class="image" src="./assets/img/furniture/furniture_logo_5.png" alt="logo">
+						</div>
+						<div class="furniture__brands-logo-caption">MetalGlas</div>
+					</div>
+					<!-- 6th item -->
+					<div class="furniture__brands-logo-item">
+						<div class="furniture__brands-logo-icon--6">
+							<img class="image" src="./assets/img/furniture/furniture_logo_6.png" alt="logo">
+						</div>
+						<div class="furniture__brands-logo-caption">Титан</div>
+					</div>
+
+				</div>
+				<div class="furniture__brands-info">
+					<div class="furniture__brands-title">CASMA</div>
+					<div class="furniture__brands-desc">Итальянская компания, производящая фурнитуру и комплектующие для стеклянных ограждений, перегородок и дверей. Преимущества - модульная система, разнообразие материалов и покрытий. Отличается высокой надежностью, функциональностью и простотой эксплуатации. Производитель предоставляет расширенную гарантию 3 года!  Одни из самых популярных механизмов от производителя с 30-ти летним стажем. </div>
+				</div>
+			</div>
+			<div class="furniture__brands-image">
+				<div class="furniture__brands-image-inner">
+					<img class="image" src="./assets/img/furniture/furniture_img.png" alt="furnirute">
+					<div class="furniture__brands-image-buttons-block">
+						<button class="btn-square btn-square--furniture">
+							<svg class="svg-arrow-left--furniture">
+								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+							</svg>
+						</button>
+						<button class="btn-square btn-square--furniture">
+							<svg class="svg-arrow-right--furniture">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- ===== 15. NEWS SECTION ===== -->
+
+<section class="news">
+	<div class="container">
+		<div class="news__headline headline">
+			<h2 class="headline__title">Новости и последние работы</h2>
+			<a class="headline__consultation" href="#">Все новости</a>
+		</div>
+
+			<ul class="news__list">
+				<!-- 1st item -->
+				<li class="news__item">
+					<div class="news__image">
+						<img class="image" src="./assets/img/news_image.jpg" alt="partitions">
+					</div>
+					<div class="news__body">
+						<div class="news__content">
+							<div class="news__title">Заголовок новости</div>
+							<div class="news__date">1 апреля 2022</div>
+							<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
+						</div>
+						<div class="news__button">
+							<button class="btn-square btn-square--news-secondary">
+								<svg class="svg-arrow-right--news">
+									<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</li>
+				<!-- 2nd item -->
+				<li class="news__item">
+					<div class="news__image">
+						<img class="image" src="./assets/img/news_image_2.jpg" alt="partitions">
+					</div>
+					<div class="news__body">
+						<div class="news__content">
+							<div class="news__title">Заголовок новости</div>
+							<div class="news__date">1 апреля 2022</div>
+							<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
+						</div>
+						<div class="news__button">
+							<button class="btn-square btn-square--news">
+								<svg class="svg-arrow-right--news">
+									<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 16. FAQ SECTION ===== -->
+
+<section class="faq">
+	<div class="container">
+		<div class="faq__headline headline">
+			<h2 class="headline__title">Ответы на вопросы</h2>
+			<a class="headline__consultation" href="#">Нужна консультация?</a>
+		</div>
+
+		<div class="faq__questions-list question-faq__list">
+			<!-- 1st item -->
+			<div class="question-faq__item">
+				<div class="question-faq__header">
+					<div class="question-faq__icon-question">
+						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+					</div>
+					<div class="question-faq__title">Сколько стоит вызов для консультации и замера?</div>
+					<div class="question-faq__icon-toggle">
+						<img class="image" src="./assets/icons/faq_minus.svg" alt="toggle icon">
+					</div>
+				</div>
+				<div class="question-faq__body">
+					<div class="question-faq__icon-quotes">
+						<svg class="svg-quotes">
+							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
+						</svg>
+					</div>
+					<div class="question-faq__answer">Если продолжительность замера не превышает 30-ти минут или по результату заключается договор, оплата не берется.<br>В остальных случаях берется плата в размере 1000 руб.</div>
+				</div>
+			</div>
+			<!-- 2nd item -->
+			<div class="question-faq__item">
+				<div class="question-faq__header">
+					<div class="question-faq__icon-question">
+						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+					</div>
+					<div class="question-faq__title">Можно ли заключить договор без замера?</div>
+					<div class="question-faq__icon-toggle">
+						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+					</div>
+				</div>
+				<div class="question-faq__body hidden">
+					<div class="question-faq__icon-quotes">
+						<svg class="svg-quotes">
+							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
+						</svg>
+					</div>
+					<div class="question-faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum fugit eaque mollitia iste non sequi, cupiditate culpa quo quasi.</div>
+				</div>
+			</div>
+			<!-- 3rd item -->
+			<div class="question-faq__item">
+				<div class="question-faq__header">
+					<div class="question-faq__icon-question">
+						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+					</div>
+					<div class="question-faq__title">Каков размер предоплаты по договору?</div>
+					<div class="question-faq__icon-toggle">
+						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+					</div>
+				</div>
+				<div class="question-faq__body hidden">
+					<div class="question-faq__icon-quotes">
+						<svg class="svg-quotes">
+							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
+						</svg>
+					</div>
+					<div class="question-faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum fugit eaque mollitia iste non sequi, cupiditate culpa quo quasi.</div>
+				</div>
+			</div>
+			<!-- 4th item -->
+			<div class="question-faq__item">
+				<div class="question-faq__header">
+					<div class="question-faq__icon-question">
+						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+					</div>
+					<div class="question-faq__title">Сколько дней ждать исполнение Заказа?</div>
+					<div class="question-faq__icon-toggle">
+						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+					</div>
+				</div>
+				<div class="question-faq__body hidden">
+					<div class="question-faq__icon-quotes">
+						<svg class="svg-quotes">
+							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
+						</svg>
+					</div>
+					<div class="question-faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum fugit eaque mollitia iste non sequi, cupiditate culpa quo quasi.</div>
+				</div>
+			</div>
+			<!-- 5th item -->
+			<div class="question-faq__item">
+				<div class="question-faq__header">
+					<div class="question-faq__icon-question">
+						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+					</div>
+					<div class="question-faq__title">Возможен ли монтаж в выходные дни?</div>
+					<div class="question-faq__icon-toggle">
+						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+					</div>
+				</div>
+				<div class="question-faq__body hidden">
+					<div class="question-faq__icon-quotes">
+						<svg class="svg-quotes">
+							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
+						</svg>
+					</div>
+					<div class="question-faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum fugit eaque mollitia iste non sequi, cupiditate culpa quo quasi.</div>
+				</div>
+			</div>
+			<!-- 6th item -->
+			<div class="question-faq__item">
+				<div class="question-faq__header">
+					<div class="question-faq__icon-question">
+						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+					</div>
+					<div class="question-faq__title">Есть ли готовые изделия на Вашем складе?</div>
+					<div class="question-faq__icon-toggle">
+						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+					</div>
+				</div>
+				<div class="question-faq__body hidden">
+					<div class="question-faq__icon-quotes">
+						<svg class="svg-quotes">
+							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
+						</svg>
+					</div>
+					<div class="question-faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum fugit eaque mollitia iste non sequi, cupiditate culpa quo quasi.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 17. ORDER SECTION ===== -->
+
+<section class="order">
+	<div class="container">
+		<h2 class="order__title">Порядок нашей работы</h2>
+
+		<div class="order__grid grid-order">
+			<!-- 1st item -->
+			<div class="grid-order__1st">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--1 number-before--1">
+							<img class="image" src="./assets/icons/icon_work_1.svg" alt="cell phone">
+						</div>
+					</div>
+					<div class="grid-order__desc">Вы оставляете заявку на сайте, по телефону или лично</div>
+				</div>
+			</div>
+			<!-- 2nd item -->
+			<div class="grid-order__2nd">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--2 number-before--2">
+							<img class="image" src="./assets/icons/icon_work_2.svg" alt="conversation">
+						</div>
+					</div>
+					<div class="grid-order__desc">Наш специалист выезжает на консультацию и замер</div>
+				</div>
+			</div>
+			<!-- 3rd item -->
+			<div class="grid-order__3rd">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--3 number-before--3">
+							<img class="image" src="./assets/icons/icon_work_3.svg" alt="project">
+						</div>
+					</div>
+					<div class="grid-order__desc">Высылаем Вам сметный расчет Вашего проекта</div>
+				</div>
+			</div>
+			<!-- 4th item -->
+			<div class="grid-order__4th">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--4 number-before--4">
+							<img class="image" src="./assets/icons/icon_work_4.svg" alt="contract">
+						</div>
+					</div>
+					<div class="grid-order__desc">Согласовываем детали и заключаем договор</div>
+				</div>
+			</div>
+			<!-- 5th item -->
+			<div class="grid-order__5th">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--5 number-before--5">
+							<img class="image" src="./assets/icons/icon_work_5.svg" alt="production">
+						</div>
+					</div>
+					<div class="grid-order__desc">Запускаем<br>конструкцию в производство</div>
+				</div>
+			</div>
+			<!-- 6th item -->
+			<div class="grid-order__6th">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--6 number-before--6">
+							<img class="image" src="./assets/icons/icon_work_6.svg" alt="truck">
+						</div>
+					</div>
+					<div class="grid-order__desc">Доставляем готовые изделия на объект</div>
+				</div>
+			</div>
+			<!-- 7th item -->
+			<div class="grid-order__7th">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--7 number-before--7">
+							<img class="image" src="./assets/icons/icon_work_7.svg" alt="partiton">
+						</div>
+					</div>
+					<div class="grid-order__desc">Выполняем монтаж стеклянных перегородок</div>
+				</div>
+			</div>
+			<!-- 8th item -->
+			<div class="grid-order__8th">
+				<div class="grid-order__item">
+					<div class="grid-order__icon">
+						<div class="grid-order__icon-size--8 number-before--8">
+							<img class="image" src="./assets/icons/icon_work_8.svg" alt="thumbs up">
+						</div>
+					</div>
+					<div class="grid-order__desc">Производим регулировку, тестирование и сдачу Заказчику</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- ===== 18. REQUEST SECTION 2  (FULL COPY OF 4TH SECTION) ===== -->
+
+<section class="request">
+	<div class="container">
+		<div class="request__inner">
+
+			<div class="request__content">
+				<div class="request__title">Узнайте цену и сроки</div>
+				<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
+				<ul class="request__list">
+					<li class="request__list-item"><span class="hl">Цены: </span>от 2682 руб/м2</li>
+					<li class="request__list-item"><span class="hl">Сроки: </span>от 7 до 15 дней</li>
+					<li class="request__list-item"><span class="hl">Оплата: </span>безналичный/наличный расчет</li>
+				</ul>
+			</div>
+
+			<div class="request__form">
+				<form action="#" class="form-request grid-request">
+					<input class="form-request__input request__1st" type="text" name="name" placeholder="Ваше Имя">
+					<input class="form-request__input request__2nd" type="tel" name="tel" placeholder="Ваш Телефон">
+					<input class="form-request__input request__3rd" type="text" name="comment" placeholder="Комментарий*">
+					<button class="btn btn--request request__4th" type="submit">
+						<div class="btn__title">Отправить заявку</div>
+					</button>
+					<div class="form-request__pesonal-data request__5th">Нажимая на кнопку “Отправить заявку” вы подтверждате свое согласие на обработку <span class="hl">пользовательских данных</span></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<!-- ===== 19. FOOTER ===== -->
+
+<footer class="footer">
+	<!-- button -->
+	<div class="footer__button">
+		<div class="footer__button-hint hint--right">
+			<button class="btn-square btn-square--footer">
+				<svg class="svg-arrow-up">
+					<use xlink:href="assets/icons/sprite.svg#arrow-up"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="footer__content">
+			<!-- 1st column -->
+			<div class="footer__info">
+				<div class="footer__info-logo">
+					<img class="image" src="./assets/icons/logo.svg" alt="logo">
+				</div>
+				<div class="footer__info-working-hours">
+					Будни: с 6 до 22<br>Выходные: с 8 до 22
+				</div>
+				<div class="footer__info-feedback"><a href="#" class="footer__info-link">Обратная связь</a></div>
+			</div>
+			<!-- 2nd column -->
+			<div class="footer__about-us">
+				<div class="footer__about-us-title">О нас</div>
+				<ul class="footer__about-us-list">
+					<li class="footer__about-us-item"><a href="#" class="footer__about-us-link">Наша продукция</a></li>
+					<li class="footer__about-us-item"><a href="#" class="footer__about-us-link">Наши проекты </a></li>
+					<li class="footer__about-us-item"><a href="#" class="footer__about-us-link">Калькулятор стоимости </a></li>
+					<li class="footer__about-us-item"><a href="#" class="footer__about-us-link">Виды материалов</a></li>
+					<li class="footer__about-us-item"><a href="#" class="footer__about-us-link">Порядок монтажа</a></li>
+					<li class="footer__about-us-item"><a href="#" class="footer__about-us-link">Контакты </a></li>
+				</ul>
+			</div>
+			<!-- 3rd & 4th columns -->
+			<div class="footer__partitions">
+				<div class="footer__partitions-title">Перегородки</div>
+				<ul class="footer__partitions-list">
+					<!-- 3rd column -->
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Стеклянные перегородки </a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Межкомнатные перегородки</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Офисные перегородки </a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Раздвижные перегородки</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Лофт перегородки</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Мобильные перегородки</a></li>
+					<!-- 4th column -->
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Для зонирования комнаты</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Торговые перегородки</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Перегородки в квартире</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Недорогие перегородки</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Душевые перегородки</a></li>
+					<li class="footer__partitions-item"><a href="#" class="footer__partitions-link">Складные перегородки</a></li>
+				</ul>
+			</div>
+			<!-- 5th columns -->
+			<div class="footer__contacts">
+				<div class="footer__contacts-title">Контакты</div>
+				<div class="footer__contacts-phone">
+					<div class="footer__contacts-phone-icon">
+						<img class="image" src="./assets/icons/call.svg" alt="telephone">
+					</div>
+					<div class="footer__contacts-phone-number">8 8000 555 3535</div>
+				</div>
+				<div class="footer__contacts-email">peregorodki@yandex.ru</div>
+				<div class="footer__contacts-address">Адрес: 117624 г. Москва,<br>Изюмсякая улица., д. 47</div>
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="footer__devider">
+
+	<div class="container">
+		<div class="footer__copyright">
+			<div class="footer__copyright-subject">© PEREGORODKI При копировании информации с сайта  - ссылка на источник обязательна.</div>
+		</div>
+	</div>
+</footer>
 
 
 <script src="assets/js/main.js"></script>
