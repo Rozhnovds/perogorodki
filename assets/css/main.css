@@ -44,10 +44,12 @@ body {
 	cursor: pointer;
 }
 .btn__icon {
+	display: inline-block;
 	width: 15px;
 	height: 15px;
 }
 .btn__title {
+	display: inline-block;
 	font-family: "Corbel";
 	font-size: 17px;
 	font-weight: bold;
@@ -218,7 +220,9 @@ body {
 	content: "8";
 }
 
+/* ===================== */
 /* ===== 1. HEADER ===== */
+/* ===================== */
 .header {
 	background-color: #545559;
 }
@@ -271,7 +275,9 @@ body {
 	text-underline-offset: 2px;
 }
 
+/* =========================== */
 /* ===== 2. HERO-SECTION ===== */
+/* =========================== */
 .hero__background {
 	position: absolute;
 	top: 17px;
@@ -416,7 +422,7 @@ body {
 	text-underline-offset: 1px;
 }
 .hero__choice-footer {
-	margin-top: -5px;
+	margin-top: -9px;
 }
 
 .hero-form {
@@ -425,10 +431,10 @@ body {
 	/* +++ SELECT STYLE */
 }
 .hero-form__select-wrapper {
-	margin-top: 9px;
+	margin-top: 8px;
 }
 .hero-form__select-label {
-	display: inline-block;
+	/* display: inline-block; */
 	font-size: 12px;
 }
 .hero-form__select-dropdown {
@@ -503,7 +509,9 @@ body {
 	height: 57px;
 }
 
+/* ============================== */
 /* ===== 3. PRODUCT SECTION ===== */
+/* ============================== */
 .product {
 	padding: 54px 0 88px 0;
 	position: relative;
@@ -697,7 +705,6 @@ body {
 
 .grid-product__image-back {
 	z-index: -1;
-	/* Почему если убрать, то кнопка и заголовок становятся под картинкой??? */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -743,7 +750,9 @@ body {
 	font-weight: 700;
 }
 
+/* ============================== */
 /* ===== 4. REQUEST SECTION ===== */
+/* ============================== */
 .request {
 	padding: 57px 0 62px 0;
 	background: url(../img/bg_block_form.png) 0 0/cover no-repeat;
@@ -850,7 +859,9 @@ body {
 	grid-area: item-5;
 }
 
+/* ================================ */
 /* ===== 5. PORTFOLIO SECTION ===== */
+/* ================================ */
 .portfolio {
 	padding: 57px 0 44px 0;
 }
@@ -915,8 +926,8 @@ body {
 	overflow: hidden;
 }
 .grid-portfolio__image-front .image {
-	/* для удаления белых кромок на фото */
 	width: 101%;
+	/* для удаления белых кромок на фото */
 	height: 101%;
 }
 
@@ -1025,7 +1036,9 @@ body {
 	fill: white;
 }
 
+/* ================================ */
 /* ===== 6. GLASSTYPE SECTION ===== */
+/* ================================ */
 .glasstype {
 	padding: 85px 0 100px 0;
 	background: url(../img/bg_block_6.png) 0 0/cover no-repeat;
@@ -1431,7 +1444,7 @@ body {
 	flex: 0 0 390px;
 }
 .constructor__options-form {
-	padding: 22px 0 21px 29px;
+	padding: 25px 0 21px 29px;
 	border: 1px solid #d9d9d9;
 	border-radius: 2px;
 }
@@ -1474,7 +1487,7 @@ body {
 }
 
 .calculator__label {
-	display: inline-block;
+	display: block;
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1.3333333333;
@@ -1548,12 +1561,12 @@ body {
 	color: #faae41;
 }
 
-.grid-calculator__1st .calculator__label {
-	margin-bottom: 5px;
+.grid-calculator__1st .calculator__input {
+	margin-top: 5px;
 }
 
-.grid-calculator__2nd .calculator__label {
-	margin-bottom: 5px;
+.grid-calculator__2nd .calculator__input {
+	margin-top: 5px;
 }
 
 .grid-calculator__5th {
@@ -2470,12 +2483,14 @@ body {
 	height: 50px;
 }
 .grid-order__icon-size--6 {
-	transform: scaleX(-1);
 	width: 53px;
 	height: 52px;
 }
 .grid-order__icon-size--6.number-before--6::before {
-	transform: scaleX(1);
+	z-index: 1;
+}
+.grid-order__icon-size--6 .image {
+	transform: scaleX(-1);
 }
 .grid-order__icon-size--7 {
 	width: 48px;
@@ -2634,6 +2649,7 @@ body {
 	color: rgba(255, 255, 255, 0.7);
 	line-height: 2;
 }
+
 .footer__partitions {
 	margin-right: 107px;
 }
@@ -2655,6 +2671,7 @@ body {
 	color: rgba(255, 255, 255, 0.7);
 	line-height: 2;
 }
+
 .footer__contacts-title {
 	font-size: 14px;
 	font-weight: 500;

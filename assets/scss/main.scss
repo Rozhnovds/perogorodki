@@ -58,11 +58,13 @@ body {
 	
 
 	&__icon {
+		display: inline-block;
 		width: 15px;
 		height: 15px;
 	}
 
 	&__title {
+		display: inline-block;
 		font-family: "Corbel";
 		font-size: 17px;
 		font-weight: bold;
@@ -125,51 +127,6 @@ body {
 		padding-right: 7px;
 	}
 }
-
-
-
-
-// .hint {
-// 	&::after {
-// 		content: "";
-
-// 		position: absolute;
-// 		top: 50%;
-// 		transform: translateY(-50%);
-		
-
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-
-// 		width: 129px;
-// 		height: 36px;
-
-// 		font-size: 14px;
-// 		color:rgba( 0, 0, 0, 0.6 );
-
-// 		background-color: white;
-// 		border-radius: 2px;
-		
-// 		@include b-shadow ( 120, 0, 0, 18, rgba(0, 0, 0, 0.1 ));
-// 	}
-
-// 	&--left {
-// 		&::after {
-// 			clip-path: polygon(5.5% 0, 100% 0, 100% 100%, 5.5% 100%, 5.5% 70%, 0 50%, 5.5% 30%, 5.5% 0 );
-// 			padding-left: 7px;
-// 		}
-// 	}
-
-// 	&--right {
-// 		&::after {
-// 			clip-path: polygon( 0 0, 94.5% 0, 94.5% 70%, 100% 50%, 94.5% 30%, 94.5% 100%, 0 100% );
-// 			padding-right: 7px;
-// 		}
-// 	}
-// }
-
-
 
 
 /* * * ICONS * * */
@@ -344,8 +301,9 @@ body {
 	}
 }
 
-
+/* ===================== */
 /* ===== 1. HEADER ===== */
+/* ===================== */
 
 .header {
 	background-color: $secondary;
@@ -407,7 +365,9 @@ body {
 }
 
 
+/* =========================== */
 /* ===== 2. HERO-SECTION ===== */
+/* =========================== */
 
 .hero {
 
@@ -578,7 +538,7 @@ body {
 		text-underline-offset: 1px;
 	}
 	&-footer {
-		margin-top: -5px;
+		margin-top: -9px;
 	}
 }
 
@@ -587,13 +547,13 @@ body {
 	justify-content: space-between;
 
 	&__select-wrapper {
-		margin-top: 9px;
+		margin-top: 8px;
 	}
 
 	/* +++ SELECT STYLE */
 
 	&__select-label {
-		display: inline-block;
+		/* display: inline-block; */
 		font-size: 12px;
 		
 	}
@@ -680,7 +640,9 @@ body {
 }
 
 
+/* ============================== */
 /* ===== 3. PRODUCT SECTION ===== */
+/* ============================== */
 
 .product {
 	padding: 54px 0 88px 0;
@@ -874,7 +836,7 @@ body {
 }
 
 .grid-product__image-back {
-	z-index: -1; /* Почему если убрать, то кнопка и заголовок становятся под картинкой??? */
+	z-index: -1;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -885,7 +847,7 @@ body {
 .grid-product__title-back {
 	font-size: 22px;
 	line-height: 1.2;
-	font-weight: 700;	
+	font-weight: 700;
 }
 
 .grid-product__desc-back {
@@ -926,7 +888,9 @@ body {
 }
 
 
+/* ============================== */
 /* ===== 4. REQUEST SECTION ===== */
+/* ============================== */
 
 .request {
 	padding: 57px 0 62px 0;
@@ -1040,7 +1004,9 @@ body {
 .request__5th { grid-area: item-5; }
 
 
+/* ================================ */
 /* ===== 5. PORTFOLIO SECTION ===== */
+/* ================================ */
 
 .portfolio {
 	padding: 57px 0 44px 0;
@@ -1096,8 +1062,7 @@ body {
 	overflow: hidden;
 	
 	.image {
-		/* для удаления белых кромок на фото */
-		width: 101%;
+		width: 101%; /* для удаления белых кромок на фото */
 		height: 101%;
 	}
 }
@@ -1128,7 +1093,7 @@ body {
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 100%;		
+	width: 100%;
 }
 
 .grid-portfolio__inner-back {
@@ -1216,7 +1181,9 @@ body {
 }
 
 
+/* ================================ */
 /* ===== 6. GLASSTYPE SECTION ===== */
+/* ================================ */
 
 .glasstype {
 	padding: 85px 0 100px 0;
@@ -1297,8 +1264,6 @@ body {
 		width: 72px;
 		height: 164px;
 	}
-
-	
 
 	&__content {
 		padding: 0px 50px 0 15px;
@@ -1535,7 +1500,6 @@ body {
 /* ===== 8. CALCULATOR SECTION ===== */
 /* ================================= */
 
-
 .calculator {
 	padding: 76px 0 54px;
 	box-shadow: 2.5px 4.3px 21px rgba(0, 0, 0, 0.08);
@@ -1571,44 +1535,6 @@ body {
 		}
 	}
 }
-
-// .constructor__number {
-
-// 	&::before {
-// 		content: "";
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		position: absolute;
-// 		top: -1px;
-//     	left: 1px;
-// 		width: 19px;
-// 		height: 19px;
-// 		color: white;
-// 		font-size: 10px;
-// 		font-weight: 700;
-// 		border-radius: 50%;
-// 		background-color: $primary;
-// 	}
-
-// 	&.one {
-// 		&::before {
-// 			content: "1";
-// 		}
-// 	}
-
-// 	&.two {
-// 		&::before {
-// 			content: "2";
-// 		}
-// 	}
-
-// 	&.three {
-// 		&::before {
-// 			content: "3";
-// 		}	
-// 	}
-// }
 
 .constructor__header {
 	margin-bottom: 18px;
@@ -1747,7 +1673,7 @@ body {
 	flex: 0 0 390px;
 
 	&-form {
-		padding: 22px 0 21px 29px;
+		padding: 25px 0 21px 29px;
 		border: 1px solid #d9d9d9;
 		border-radius: 2px;
 	}
@@ -1785,7 +1711,7 @@ body {
 
 
 .calculator__label {
-	display: inline-block;
+	display: block;
 	font-size: 12px;
 	color: rgba( 0, 0, 0, 0.8 );
 	@include l-height ( 16, 12 );
@@ -1867,18 +1793,17 @@ body {
 }
 
 
-
 .grid-calculator__1st {
 
-	.calculator__label {
-		margin-bottom: 5px;
+	.calculator__input {
+		margin-top: 5px;
 	}
 }
 
 .grid-calculator__2nd {
 
-	.calculator__label {
-		margin-bottom: 5px;
+	.calculator__input {
+		margin-top: 5px;
 	}
 }
 .grid-calculator__3rd {
@@ -1956,6 +1881,7 @@ body {
 		font-size: 18px;
 	}
 }
+
 
 /* ============================= */
 /* ===== 9. CHARGE SECTION ===== */
@@ -2266,7 +2192,6 @@ body {
 /* ===== 11. STEPS SECTION ===== */
 /* ============================= */
 
-
 .steps {
 	padding: 54px 0 68px;
 	background-color: $primary;
@@ -2339,16 +2264,6 @@ body {
 		font-size: 16px;
 		font-weight: 700;
 		color: rgba( 0, 0, 0, 0.9 );
-		
-
-		// &.number-before--1 {
-		// 	&::before{
-		// 		top: -1px;
-		// 		left: 0;
-		// 		width: 20px;
-		// 		height: 20px;
-		// 	}	
-		// }
 	}
 
 	&__desc {
@@ -2557,7 +2472,6 @@ body {
 /* ================================= */
 /* ===== 14. FUTNITURE SECTION ===== */
 /* ================================= */
-
 
 .furnirute {
 	padding: 81px 0 88px;
@@ -2788,7 +2702,6 @@ body {
 }
 
 
-
 /* =========================== */
 /* ===== 16. FAQ SECTION ===== */
 /* =========================== */
@@ -2982,13 +2895,17 @@ body {
 	}
 
 	&__icon-size--6 {
-		transform: scaleX(-1);
 		width: 53px;
 		height: 52px;	
+		
 		&.number-before--6 {
 			&::before {
-				transform: scaleX(1);
+				z-index: 1;
 			}
+		}
+
+		.image {
+			transform: scaleX(-1);
 		}
 	}
 
@@ -3138,7 +3055,6 @@ body {
 	}
 }
 
-
 .footer__info {
 	margin-right: 137px;
 	text-align: center;
@@ -3191,9 +3107,6 @@ body {
 		@include l-height ( 22, 11 );
 	}
 
-	&-link {
-
-	}
 }
 
 .footer__partitions {
@@ -3218,10 +3131,6 @@ body {
 		font-size: 11px;
 		color: rgba( 255, 255, 255, 0.7 );
 		@include l-height ( 22, 11 );
-	}
-
-	&-link {
-
 	}
 }
 

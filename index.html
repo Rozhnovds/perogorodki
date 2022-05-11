@@ -93,17 +93,17 @@
 				<div class="hero__offer-footer">
 					<!-- 1st button -->
 					<button class="btn">
-						<div class="btn__icon">
+						<span class="btn__icon">
 							<img class="image" src="./assets/icons/icon_zamer.svg" alt="measuring">
-						</div>
-						<div class="btn__title">Заказать замер</div>
+						</span>
+						<span class="btn__title">Заказать замер</span>
 					</button>
 					<!-- 2nd button -->
 					<button class="btn btn--hero-offer">
-						<div class="btn__icon">
+						<span class="btn__icon">
 							<img class="image" src="./assets/icons/icon_consult.svg" alt="consultation">
-						</div>
-						<div class="btn__title">Консультация</div>
+						</span>
+						<span class="btn__title">Консультация</span>
 					</button>
 
 				</div>
@@ -125,46 +125,40 @@
 				<form action="#" class="hero-form">
 					<!-- 1st item -->
 					<div class="hero-form__select">
-						<label class="hero-form__select-label select-label">
-							Назначение
-							<div class="hero-form__select-wrapper"> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
-								<select class="hero-form__select-dropdown" name="function">
-									<option value="office_partition">Офисная перегородка</option>
-									<option value="office_partition_2">Офисная перегородка 2</option>
-									<option value="office_partition_3">Офисная перегородка 3</option>
-								</select>
-							</div>
-						</label>
+						<label for="function" class="hero-form__select-label select-label">Назначение</label>
+						<div class="hero-form__select-wrapper select-wrapper"> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
+							<select class="hero-form__select-dropdown select-dropdown" name="function" id="function">
+								<option value="office_partition">Офисная перегородка</option>
+								<option value="office_partition_2">Офисная перегородка 2</option>
+								<option value="office_partition_3">Офисная перегородка 3</option>
+							</select>
+						</div>
 					</div>
 					<!-- 2nd item -->
 					<div class="hero-form__select">
-						<label class="hero-form__select-label select-label">
-							Тип стекла
-							<div class="hero-form__select-wrapper select-wrapper"> 
-								<select class="hero-form__select-dropdown select-dropdown" name="type">
-									<option value="glass_graphit">Стекло графит</option>
-									<option value="glass_graphit_2">Стекло графит 2</option>
-									<option value="glass_graphit_3">Стекло графит 3</option>
-								</select>
-							</div>
-						</label>
+						<label class="hero-form__select-label select-label">Тип стекла</label>
+						<div class="hero-form__select-wrapper select-wrapper"> 
+							<select class="hero-form__select-dropdown select-dropdown" name="type">
+								<option value="glass_graphit">Стекло графит</option>
+								<option value="glass_graphit_2">Стекло графит 2</option>
+								<option value="glass_graphit_3">Стекло графит 3</option>
+							</select>
+						</div>	
 					</div>
 					<!-- 3rd item -->
 					<div class="hero-form__select">
-						<label class="hero-form__select-label select-label">
-							Материал рамы (цвет)
-							<div class="hero-form__select-wrapper select-wrapper">
-								<select class="hero-form__select-dropdown select-dropdown" name="material">
-									<option value="alluminium_black">Аллюминий (черный)</option>
-									<option value="alluminium_black_2">Аллюминий (черный) 2</option>
-									<option value="alluminium_black_3">Аллюминий (черный) 3</option>
-								</select>
-							</div>
-						</label>
+						<label class="hero-form__select-label select-label">Материал рамы (цвет)</label>
+						<div class="hero-form__select-wrapper select-wrapper">
+							<select class="hero-form__select-dropdown select-dropdown" name="material">
+								<option value="alluminium_black">Аллюминий (черный)</option>
+								<option value="alluminium_black_2">Аллюминий (черный) 2</option>
+								<option value="alluminium_black_3">Аллюминий (черный) 3</option>
+							</select>
+						</div>
 					</div>
 					
 					<button class="btn btn--hero-choice">
-						<div class="btn__title">Перезвоните мне</div>
+						<span class="btn__title">Перезвоните мне</span>
 					</button>
 			
 				</form>
@@ -261,7 +255,7 @@
 				<div class="grid-product__order-back">Под заказ от 5 дней</div>
 				<div class="grid-product__price-back">Цена от: <span class="hl">2700 р. кв/м</span></div>
 				<button class="btn btn--product">
-					<div class="btn__title">Подробнее</div>
+					<span class="btn__title">Подробнее</span>
 				</button>
 			</div>
 			
@@ -284,7 +278,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3600 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -311,7 +305,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">4100 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -337,7 +331,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">4900 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -363,7 +357,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3700 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -390,7 +384,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">2100 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -416,7 +410,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3700 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -442,7 +436,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">5100 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -468,7 +462,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3800 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -494,7 +488,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">2900 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -520,7 +514,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3200 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -546,7 +540,7 @@
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
 						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3000 р. кв/м</span></div>
 						<button class="btn btn--product">
-							<div class="btn__title">Подробнее</div>
+							<span class="btn__title">Подробнее</span>
 						</button>
 					</div>
 
@@ -565,7 +559,7 @@
 		<div class="request__inner">
 
 			<div class="request__content">
-				<div class="request__title">Узнайте цену и сроки</div>
+				<h2 class="request__title">Узнайте цену и сроки</h2>
 				<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
 				<ul class="request__list">
 					<li class="request__list-item"><span class="hl">Цены: </span>от 2682 руб/м2</li>
@@ -580,7 +574,7 @@
 					<input class="form-request__input request__2nd" type="tel" name="tel" placeholder="Ваш Телефон">
 					<input class="form-request__input request__3rd" type="text" name="comment" placeholder="Комментарий*">
 					<button class="btn btn--request request__4th" type="submit">
-						<div class="btn__title">Отправить заявку</div>
+						<span class="btn__title">Отправить заявку</span>
 					</button>
 					<div class="form-request__pesonal-data request__5th">Нажимая на кнопку “Отправить заявку” вы подтверждате свое согласие на обработку <span class="hl">пользовательских данных</span></div>
 				</form>
@@ -706,12 +700,12 @@
 	</div>
 	
 	<button class="btn btn--portfolio-more">
-		<div class="btn__title">Показать ещё</div>
-		<div class="btn__icon">
+		<span class="btn__title">Показать ещё</span>
+		<span class="btn__icon">
 			<svg class="svg-arrow-down">
 				<use xlink:href="assets/icons/sprite.svg#arrow-down"></use>
 			</svg>
-		</div>
+		</span>
 	</button>
 
 	
@@ -949,10 +943,10 @@
 				</ul>
 				<div class="design__content-button-block">
 					<button class="btn btn--design-content">
-						<div class="btn__title">Вызвать замерщика</div>
+						<span class="btn__title">Вызвать замерщика</span>
 					</button>
 					<button class="btn btn--design-content btn--design-content-secondary">
-						<div class="btn__title">Нужна консультация</div>
+						<span class="btn__title">Нужна консультация</span>
 					</button>
 				</div>
 
@@ -1078,27 +1072,24 @@
 					</div>
 					<!-- 3rd item -->
 					<div class="grid-calculator__3rd">
-						<label class="calculator__label select-label">
-							Материал остекления
-							<div class="calculator__select-wrapper select-wrapper"> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
-								<select class="calculator__select-dropdown select-dropdown" name="material">
-									<option value="alluminium_mat">Алюмний, матовое стекло</option>
-									<option value="alluminium_clean">Алюмний, прозрачное стекло</option>
-								</select>
-							</div>
-						</label>
+						<span class="calculator__label select-label">Материал остекления</span>
+						<!-- <label for="material" class="calculator__label select-label">Материал остекления</label> -->
+						<div class="calculator__select-wrapper select-wrapper"> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
+							<select class="calculator__select-dropdown select-dropdown" name="material" id="material">
+								<option value="alluminium_mat">Алюмний, матовое стекло</option>
+								<option value="alluminium_clean">Алюмний, прозрачное стекло</option>
+							</select>
+						</div>
 					</div>
 					<!-- 4th item -->
 					<div class="grid-calculator__4th">
-						<label class="calculator__label select-label">
-							Размер двери
-							<div class="calculator__select-wrapper select-wrapper "> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
-								<select class="calculator__select-dropdown select-dropdown" name="door_size">
-									<option value="single_door">Одинарная дверь</option>
-									<option value="double_door">Двойная дверь</option>
-								</select>
-							</div>
-						</label>
+						<label for="door_size" class="calculator__label select-label">Размер двери</label>
+						<div class="calculator__select-wrapper select-wrapper "> <!-- Необходим для позиционирования псевдоэлемнта треугольника -->
+							<select class="calculator__select-dropdown select-dropdown" name="door_size" id="door_size">
+								<option value="single_door">Одинарная дверь</option>
+								<option value="double_door">Двойная дверь</option>
+							</select>
+						</div>
 					</div>
 					<!-- 5th item -->
 					<div class="grid-calculator__5th">
@@ -1107,7 +1098,7 @@
 					</div>
 					<!-- 6th item -->
 					<div class="grid-calculator__6th">
-						<input class="calculator__input calculator__input--square" type="checkbox" name="delivery" id="calculator-quantity">
+						<input class="calculator__input calculator__input--square" type="checkbox" name="delivery" id="calculator-delivery">
 						<label for="calculator-delivery" class="calculator__label">Доставка, погрузка в пределах МКАД</label>
 					</div>
 					<!-- 7th item -->
@@ -1123,7 +1114,7 @@
 
 		<div class="calculator__request">
 			<button class="btn btn--calculator">
-				<div class="btn__title">Получить точный рассчет проекта бесплатно</div>
+				<span class="btn__title">Получить точный рассчет проекта бесплатно</span>
 			</button>
 			<div class="calculator__personal-data">Нажимая на кнопку “Отправить заявку” вы<br> подтверждате свое согласие на обработку<br><span class="hl">пользовательских данных</span></div>
 		</div>
@@ -1212,11 +1203,11 @@
 		<h2 class="pricelist__title">Прайс-лист</h2>
 
 		<ul class="pricelist__tab-list">
-			<div class="pricelist__tab-list-item pricelist__tab-list-item--active" data-tab="tab-1">Типовые решения</div>
-			<div class="pricelist__tab-list-item" data-tab="tab-2">Недорогие решения</div>
-			<div class="pricelist__tab-list-item" data-tab="tab-3">Варианты остекления</div>
-			<div class="pricelist__tab-list-item" data-tab="tab-4">Цены на работы</div>
-			<div class="pricelist__tab-list-item" data-tab="tab-5">Дополнительные услуги</div>	
+			<li class="pricelist__tab-list-item pricelist__tab-list-item--active" data-tab="tab-1">Типовые решения</li>
+			<li class="pricelist__tab-list-item" data-tab="tab-2">Недорогие решения</li>
+			<li class="pricelist__tab-list-item" data-tab="tab-3">Варианты остекления</li>
+			<li class="pricelist__tab-list-item" data-tab="tab-4">Цены на работы</li>
+			<li class="pricelist__tab-list-item" data-tab="tab-5">Дополнительные услуги</li>	
 		</ul>
 		
 		<!-- 1st item -->
@@ -1297,10 +1288,10 @@
 			</div>
 			<div class="pricelist__consultation-buttons-block">
 				<button class="btn btn--pricelist">
-					<div class="btn__title">Вызвать замерщика</div>
+					<span class="btn__title">Вызвать замерщика</span>
 				</button>
 				<button class="btn btn--pricelist btn--pricelist-secondary">
-					<div class="btn__title">Нужна консультация</div>
+					<span class="btn__title">Нужна консультация</span>
 				</button>
 			</div>
 		</div>
@@ -1632,50 +1623,49 @@
 			<a class="headline__consultation" href="#">Все новости</a>
 		</div>
 
-			<ul class="news__list">
-				<!-- 1st item -->
-				<li class="news__item">
-					<div class="news__image">
-						<img class="image" src="./assets/img/news_image.jpg" alt="partitions">
+		<ul class="news__list">
+			<!-- 1st item -->
+			<li class="news__item">
+				<div class="news__image">
+					<img class="image" src="./assets/img/news_image.jpg" alt="partitions">
+				</div>
+				<div class="news__body">
+					<div class="news__content">
+						<div class="news__title">Заголовок новости</div>
+						<div class="news__date">1 апреля 2022</div>
+						<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
 					</div>
-					<div class="news__body">
-						<div class="news__content">
-							<div class="news__title">Заголовок новости</div>
-							<div class="news__date">1 апреля 2022</div>
-							<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
-						</div>
-						<div class="news__button">
-							<button class="btn-square btn-square--news-secondary">
-								<svg class="svg-arrow-right--news">
-									<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
-								</svg>
-							</button>
-						</div>
+					<div class="news__button">
+						<button class="btn-square btn-square--news-secondary">
+							<svg class="svg-arrow-right--news">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
 					</div>
-				</li>
-				<!-- 2nd item -->
-				<li class="news__item">
-					<div class="news__image">
-						<img class="image" src="./assets/img/news_image_2.jpg" alt="partitions">
+				</div>
+			</li>
+			<!-- 2nd item -->
+			<li class="news__item">
+				<div class="news__image">
+					<img class="image" src="./assets/img/news_image_2.jpg" alt="partitions">
+				</div>
+				<div class="news__body">
+					<div class="news__content">
+						<div class="news__title">Заголовок новости</div>
+						<div class="news__date">1 апреля 2022</div>
+						<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
 					</div>
-					<div class="news__body">
-						<div class="news__content">
-							<div class="news__title">Заголовок новости</div>
-							<div class="news__date">1 апреля 2022</div>
-							<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
-						</div>
-						<div class="news__button">
-							<button class="btn-square btn-square--news">
-								<svg class="svg-arrow-right--news">
-									<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
-								</svg>
-							</button>
-						</div>
+					<div class="news__button">
+						<button class="btn-square btn-square--news">
+							<svg class="svg-arrow-right--news">
+								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
+							</svg>
+						</button>
 					</div>
-				</li>
-			</ul>
+				</div>
+			</li>
+		</ul>
 
-		</div>
 	</div>
 </section>
 
@@ -1923,7 +1913,7 @@
 		<div class="request__inner">
 
 			<div class="request__content">
-				<div class="request__title">Узнайте цену и сроки</div>
+				<h2 class="request__title">Узнайте цену и сроки</h2>
 				<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
 				<ul class="request__list">
 					<li class="request__list-item"><span class="hl">Цены: </span>от 2682 руб/м2</li>
@@ -1938,7 +1928,7 @@
 					<input class="form-request__input request__2nd" type="tel" name="tel" placeholder="Ваш Телефон">
 					<input class="form-request__input request__3rd" type="text" name="comment" placeholder="Комментарий*">
 					<button class="btn btn--request request__4th" type="submit">
-						<div class="btn__title">Отправить заявку</div>
+						<span class="btn__title">Отправить заявку</span>
 					</button>
 					<div class="form-request__pesonal-data request__5th">Нажимая на кнопку “Отправить заявку” вы подтверждате свое согласие на обработку <span class="hl">пользовательских данных</span></div>
 				</form>
