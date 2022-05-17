@@ -39,7 +39,7 @@ body {
 	width: 242px;
 	height: 55px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 2px;
 	background-color: #faae41;
 	cursor: pointer;
 }
@@ -56,17 +56,6 @@ body {
 	color: white;
 }
 
-.btn-square {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 66px;
-	height: 59px;
-	border: none;
-	background-color: #faae41;
-	border-radius: 2px;
-}
-
 /* * * HINT STYLES * * */
 .hint--right::after, .hint--left::after {
 	content: "";
@@ -76,7 +65,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 129px;
+	min-width: 129px;
 	height: 36px;
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.6);
@@ -180,6 +169,9 @@ body {
 }
 
 /* * * NUMBER-BEFORE STYLE * * */
+.number-before--8, .number-before--7, .number-before--6, .number-before--5, .number-before--4, .number-before--3, .number-before--2, .number-before--1 {
+	position: relative;
+}
 .number-before--8::before, .number-before--7::before, .number-before--6::before, .number-before--5::before, .number-before--4::before, .number-before--3::before, .number-before--2::before, .number-before--1::before {
 	content: "";
 	display: flex;
@@ -220,9 +212,9 @@ body {
 	content: "8";
 }
 
-/* ===================== */
-/* ===== 1. HEADER ===== */
-/* ===================== */
+/* ================================= */
+/* =========== 1. HEADER =========== */
+/* ================================= */
 .header {
 	background-color: #545559;
 }
@@ -232,9 +224,11 @@ body {
 	align-items: center;
 	padding: 11px 0 20px;
 }
-.header__logo {
+
+.svg-logo {
 	width: 147px;
 	height: 49px;
+	fill: #fefefe;
 }
 
 .nav {
@@ -253,11 +247,6 @@ body {
 .header__call {
 	color: white;
 }
-.header__call-icon {
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-}
 .header__call-number {
 	display: inline-block;
 	font-size: 22px;
@@ -275,32 +264,49 @@ body {
 	text-underline-offset: 2px;
 }
 
-/* =========================== */
-/* ===== 2. HERO-SECTION ===== */
-/* =========================== */
-.hero__background {
-	position: absolute;
-	top: 17px;
-	left: 1px;
-	z-index: -1;
-	max-height: 836px;
+.svg-call {
+	width: 13px;
+	height: 13px;
+	fill: #fefefe;
 }
-.hero__mark {
+
+/* ================================= */
+/* ======== 2. HERO-SECTION ======== */
+/* ================================= */
+.hero__background {
+	position: relative;
+}
+.hero__background .container {
 	position: absolute;
-	width: 78px;
-	height: 78px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.hero__background-image {
+	position: relative;
+	padding-bottom: 43.475%;
+}
+.hero__background-image .image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+}
+.hero__mark--1st, .hero__mark--2nd, .hero__mark--3rd {
+	position: absolute;
 }
 .hero__mark--1st {
-	top: 222px;
-	left: 1219px;
+	top: 17%;
+	right: 32.4%;
 }
 .hero__mark--2nd {
-	top: 455px;
-	left: 1155px;
+	top: 45%;
+	right: 35.8%;
 }
 .hero__mark--3rd {
-	top: 585px;
-	left: 1552px;
+	top: 60.6%;
+	right: 15.2%;
 }
 .hero__mark--active div[class*=hint]::after {
 	content: "Цвет: Графит";
@@ -321,16 +327,24 @@ body {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.hero__arrow-left {
+.svg-mark,
+.svg-mark-active-down,
+.svg-mark-active-up {
+	width: 78px;
+	height: 78px;
+}
+
+.hero__btn-arrow-left {
 	position: absolute;
-	top: 239px;
+	z-index: 1;
+	top: 19%;
 	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+}
+
+.btn--hero-arrow-left {
 	width: 41px;
 	height: 41px;
-	background-color: #faae41;
+	border-radius: 0px;
 }
 
 .svg-arrow-left {
@@ -340,7 +354,7 @@ body {
 }
 
 .hero__offer {
-	margin-top: 159px;
+	margin-top: calc(15vw - 129px);
 	padding: 33px 36px 38px 42px;
 	width: 579px;
 	height: 337px;
@@ -376,10 +390,18 @@ body {
 	font-weight: 500;
 }
 
+.svg-zamer,
+.svg-consult {
+	width: 15px;
+	height: 15px;
+	fill: white;
+}
+
 .hero__choice {
+	position: relative;
+	margin-top: -8.7%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 234px;
 	padding: 26px 36px 34px 34px;
 	width: 100%;
 	height: 192px;
@@ -509,31 +531,31 @@ body {
 	height: 57px;
 }
 
-/* ============================== */
-/* ===== 3. PRODUCT SECTION ===== */
-/* ============================== */
+.svg-hero--advantages-1,
+.svg-hero--advantages-3 {
+	width: 55px;
+	height: 55px;
+	fill: #faae41;
+}
+
+.svg-hero--advantages-2 {
+	width: 53px;
+	height: 53px;
+	fill: #faae41;
+}
+
+.svg-hero--advantages-4 {
+	width: 57px;
+	height: 57px;
+	fill: #faae41;
+}
+
+/* ================================= */
+/* ====== 3. PRODUCT SECTION ======= */
+/* ================================= */
 .product {
 	padding: 54px 0 88px 0;
 	position: relative;
-}
-.product__btn-calc {
-	position: absolute;
-	top: 144px;
-	right: 0;
-}
-.product__btn-ring-wrapper {
-	position: relative;
-}
-.product__btn-ring {
-	position: absolute;
-	top: 209px;
-	right: 0;
-}
-.product__btn-ring div[class*=hint]::after {
-	content: "Позвоните нам";
-	right: 118%;
-	color: rgba(0, 0, 0, 0.6);
-	background-color: #fcfbfc;
 }
 .product__title {
 	text-align: center;
@@ -544,10 +566,56 @@ body {
 	margin-top: 59px;
 }
 
+.product__btn-calc {
+	position: absolute;
+	z-index: 1;
+	top: 144px;
+	right: 0;
+}
+
+button[class*=btn--product-calc][class*=hint]::after {
+	display: none;
+}
+
+button[class*=btn--product-calc][class*=hint]:hover::after {
+	min-width: 155px;
+	/* !!!!!!!!!!!!!!!!!Почему без этого текст переносится? */
+	display: flex;
+	content: "Выполните расчёт";
+	right: 118%;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: #fcfbfc;
+}
+
+.product__btn-ring {
+	position: absolute;
+	z-index: 1;
+	top: 209px;
+	right: 0;
+}
+
+button[class*=btn--product-ring][class*=hint]::after {
+	display: none;
+}
+
+button[class*=btn--product-ring][class*=hint]:hover::after {
+	display: flex;
+	content: "Позвоните нам";
+	right: 118%;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: #fcfbfc;
+}
+
+.btn--product-ring,
+.btn--product-calc {
+	position: relative;
+	width: 66px;
+	height: 59px;
+}
+
 .btn--product {
 	width: 322px;
 	height: 54px;
-	border-radius: 2px;
 }
 .btn--product__title {
 	font-size: 18px;
@@ -750,9 +818,9 @@ body {
 	font-weight: 700;
 }
 
-/* ============================== */
-/* ===== 4. REQUEST SECTION ===== */
-/* ============================== */
+/* ================================= */
+/* ====== 4. REQUEST SECTION ======= */
+/* ================================= */
 .request {
 	padding: 57px 0 62px 0;
 	background: url(../img/bg_block_form.png) 0 0/cover no-repeat;
@@ -859,9 +927,9 @@ body {
 	grid-area: item-5;
 }
 
-/* ================================ */
-/* ===== 5. PORTFOLIO SECTION ===== */
-/* ================================ */
+/* ================================= */
+/* ===== 5. PORTFOLIO SECTION ====== */
+/* ================================= */
 .portfolio {
 	padding: 57px 0 44px 0;
 }
@@ -877,43 +945,17 @@ body {
 
 .grid-portfolio {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 338px);
-	grid-template-areas: "item-1 item-2 item-3 item-4" "item-5 item-6 item-7 item-8";
+	grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+	grid-auto-rows: 338px;
+	justify-content: center;
 }
 
-.portfolio__1st {
-	grid-area: item-1;
+@media (max-width: 1759px) {
+	.portfolio__6th {
+		grid-row: 2/4;
+		grid-column: 3/4;
+	}
 }
-
-.portfolio__2nd {
-	grid-area: item-2;
-}
-
-.portfolio__3rd {
-	grid-area: item-3;
-}
-
-.portfolio__4th {
-	grid-area: item-4;
-}
-
-.portfolio__5th {
-	grid-area: item-5;
-}
-
-.portfolio__6th {
-	grid-area: item-6;
-}
-
-.portfolio__7th {
-	grid-area: item-7;
-}
-
-.portfolio__8th {
-	grid-area: item-8;
-}
-
 .grid-portfolio__item-front {
 	position: relative;
 }
@@ -975,13 +1017,13 @@ body {
 }
 
 .grid-portfolio__title-back {
+	margin-bottom: 19px;
 	font-size: 22px;
 	line-height: 1.2;
 	font-weight: 700;
 }
 
 .grid-portfolio__desc-back {
-	padding-top: 19px;
 	flex: 1 1 auto;
 	font-size: 14px;
 	opacity: 0.9;
@@ -989,12 +1031,13 @@ body {
 }
 
 .grid-portfolio__order-back {
-	padding-bottom: 14px;
+	margin-top: 19px;
 	opacity: 0.7;
 	font-size: 14px;
 }
 
 .grid-portfolio__price-back {
+	margin-top: 14px;
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 14px;
 }
@@ -1004,7 +1047,7 @@ body {
 	font-weight: 700;
 }
 
-.btn-square--portfolio-arrow {
+.btn--portfolio-arrow {
 	margin-left: auto;
 	width: 35px;
 	height: 35px;
@@ -1023,7 +1066,6 @@ body {
 	width: 247px;
 	height: 53px;
 	gap: 6px;
-	border-radius: 2px;
 	background-color: #545559;
 }
 .btn--portfolio-more .btn__title {
@@ -1125,9 +1167,10 @@ body {
 	line-height: 1.8571428571;
 }
 
-.btn-square--glasstype {
+.btn--glasstype {
 	width: 31px;
 	height: 31px;
+	border-radius: 0px;
 }
 
 .svg-arrow-left--glasstype {
@@ -1271,7 +1314,8 @@ body {
 	height: 7px;
 }
 
-.btn-square--design {
+.btn--design {
+	border-radius: 0px;
 	width: 36px;
 	height: 36px;
 }
@@ -1291,7 +1335,6 @@ body {
 .btn--design-content {
 	width: 240px;
 	height: 56px;
-	border-radius: 2px;
 }
 .btn--design-content .btn__title {
 	font-size: 16px;
@@ -1342,7 +1385,6 @@ body {
 .constructor__header-title {
 	padding-left: 26px;
 	display: inline-block;
-	position: relative;
 	font-size: 14px;
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.7);
@@ -1624,7 +1666,6 @@ body {
 	flex: 0 1 458px;
 	width: 458px;
 	height: 52px;
-	border-radius: 2px;
 }
 .btn--calculator .btn__title {
 	font-size: 18px;
@@ -1660,18 +1701,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.charge__item-icon-size--1 {
-	width: 63px;
-	height: 63px;
-}
-.charge__item-icon-size--2 {
-	width: 52px;
-	height: 52px;
-}
-.charge__item-icon-size--3 {
-	width: 55px;
-	height: 55px;
-}
 .charge__item-content {
 	padding: 29px 21px 29px 0;
 }
@@ -1706,6 +1735,27 @@ body {
 }
 .charge__item-price-inner {
 	text-align: center;
+}
+
+.svg-charge--1,
+.svg-charge--2,
+.svg-charge--3 {
+	fill: #faae41;
+}
+
+.svg-charge--1 {
+	width: 63px;
+	height: 63px;
+}
+
+.svg-charge--2 {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-charge--3 {
+	width: 55px;
+	height: 55px;
 }
 
 .charge__item--first .charge__item-desc {
@@ -1858,7 +1908,6 @@ body {
 .btn--pricelist {
 	width: 247px;
 	height: 56px;
-	border-radius: 2px;
 }
 .btn--pricelist .btn__title {
 	font-size: 16px;
@@ -1939,7 +1988,6 @@ body {
 }
 .grid-steps__title {
 	padding-left: 32px;
-	position: relative;
 	font-size: 16px;
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.9);
@@ -1960,33 +2008,9 @@ body {
 .grid-steps__benefits-icon {
 	flex: 0 0 92px;
 }
-.grid-steps__benefits-icon div[class*=icon-size] {
+.grid-steps__benefits-icon svg[class*=svg-steps] {
+	display: block;
 	margin: 3px auto 0 auto;
-}
-.grid-steps__benefits-icon-size--1 {
-	width: 58px;
-	height: 58px;
-}
-.grid-steps__benefits-icon-size--2 {
-	transform: scaleX(-1);
-	width: 59px;
-	height: 59px;
-}
-.grid-steps__benefits-icon-size--3 {
-	width: 56px;
-	height: 56px;
-}
-.grid-steps__benefits-icon-size--4 {
-	width: 58px;
-	height: 58px;
-}
-.grid-steps__benefits-icon-size--5 {
-	width: 60px;
-	height: 60px;
-}
-.grid-steps__benefits-icon-size--6 {
-	width: 61px;
-	height: 61px;
 }
 .grid-steps__benefits-list-item {
 	padding-left: 30px;
@@ -2001,6 +2025,39 @@ body {
 .grid-steps__benefits-list-item.check-before::before {
 	top: 3px;
 	left: 9px;
+}
+.grid-steps .svg-steps--1,
+.grid-steps .svg-steps--2,
+.grid-steps .svg-steps--3,
+.grid-steps .svg-steps--4,
+.grid-steps .svg-steps--5,
+.grid-steps .svg-steps--6 {
+	fill: #faae41;
+}
+.grid-steps .svg-steps--1 {
+	width: 58px;
+	height: 58px;
+}
+.grid-steps .svg-steps--2 {
+	transform: scaleX(-1);
+	width: 59px;
+	height: 59px;
+}
+.grid-steps .svg-steps--3 {
+	width: 56px;
+	height: 56px;
+}
+.grid-steps .svg-steps--4 {
+	width: 58px;
+	height: 58px;
+}
+.grid-steps .svg-steps--5 {
+	width: 60px;
+	height: 60px;
+}
+.grid-steps .svg-steps--6 {
+	width: 61px;
+	height: 61px;
 }
 
 /* ================================ */
@@ -2234,7 +2291,8 @@ body {
 	text-decoration-color: #faae41;
 }
 
-.btn-square--furniture {
+.btn--furniture {
+	border-radius: 0px;
 	width: 31px;
 	height: 31px;
 }
@@ -2300,14 +2358,15 @@ body {
 	align-self: flex-end;
 }
 
-.btn-square--news-secondary, .btn-square--news {
+.btn--news-secondary, .btn--news {
 	margin: 0 auto;
+	border-radius: 0px;
 	width: 31px;
 	height: 31px;
 	fill: white;
 }
 
-.btn-square--news-secondary {
+.btn--news-secondary {
 	background-color: #545559;
 }
 
@@ -2387,10 +2446,21 @@ body {
 	padding: 28px 0 0 0;
 }
 
+.svg-question {
+	width: 24px;
+	height: 24px;
+}
+
 .svg-quotes {
 	fill: #e5e5e5;
 	width: 22px;
 	height: 18px;
+}
+
+.svg-faq--minus,
+.svg-faq--plus {
+	width: 75px;
+	height: 75px;
 }
 
 /* ============================ */
@@ -2459,53 +2529,64 @@ body {
 	color: white;
 	font-size: 12px;
 }
-.grid-order__icon div[class*=icon-size] {
-	position: relative;
-}
-.grid-order__icon-size--1 {
-	width: 49px;
-	height: 49px;
-}
-.grid-order__icon-size--2 {
-	width: 52px;
-	height: 52px;
-}
-.grid-order__icon-size--3 {
-	width: 45px;
-	height: 45px;
-}
-.grid-order__icon-size--4 {
-	width: 40px;
-	height: 50px;
-}
-.grid-order__icon-size--5 {
-	width: 50px;
-	height: 50px;
-}
-.grid-order__icon-size--6 {
-	width: 53px;
-	height: 52px;
-}
-.grid-order__icon-size--6.number-before--6::before {
-	z-index: 1;
-}
-.grid-order__icon-size--6 .image {
-	transform: scaleX(-1);
-}
-.grid-order__icon-size--7 {
-	width: 48px;
-	height: 48px;
-}
-.grid-order__icon-size--8 {
-	width: 49px;
-	height: 50px;
-}
 .grid-order__desc {
 	margin-left: 20px;
 	font-family: "Open Sans";
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.7);
 	line-height: 1.3571428571;
+}
+
+.svg-order--1,
+.svg-order--2,
+.svg-order--3,
+.svg-order--4,
+.svg-order--5,
+.svg-order--6,
+.svg-order--7,
+.svg-order--8 {
+	fill: #898989;
+}
+
+.svg-order--1 {
+	width: 49px;
+	height: 49px;
+}
+
+.svg-order--2 {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-order--3 {
+	width: 45px;
+	height: 45px;
+}
+
+.svg-order--4 {
+	width: 40px;
+	height: 50px;
+}
+
+.svg-order--5 {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-order--6 {
+	width: 53px;
+	height: 52px;
+	transform: scaleX(-1);
+}
+
+.svg-order--7 {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-order--8 {
+	width: 49px;
+	height: 50px;
 }
 
 .grid-order__1st {
@@ -2549,6 +2630,9 @@ body {
 .grid-order__6th .grid-order__item {
 	padding: 31px 30px 0 50px;
 }
+.grid-order__6th .number-before--6::before {
+	z-index: 1;
+}
 
 .grid-order__7th {
 	border-left: 1px solid #e0e0e0;
@@ -2586,9 +2670,9 @@ body {
 /* ============================================================= */
 /* ===== 18. REQUEST SECTION 2  (FULL COPY OF 4TH SECTION) ===== */
 /* ============================================================= */
-/* ====================== */
-/* ===== 19. FOOTER ===== */
-/* ====================== */
+/* ================================= */
+/* ========== 19. FOOTER =========== */
+/* ================================= */
 .footer {
 	padding: 80px 0 29px;
 	position: relative;
@@ -2610,8 +2694,6 @@ body {
 }
 .footer__info-logo {
 	margin-top: -10px;
-	width: 147px;
-	height: 49px;
 }
 .footer__info-working-hours {
 	margin-top: 32px;
@@ -2622,7 +2704,7 @@ body {
 	line-height: 1.4545454545;
 }
 .footer__info-feedback {
-	margin-top: 15px;
+	margin-top: 13px;
 	padding-left: 13px;
 }
 .footer__info-link {
@@ -2632,6 +2714,12 @@ body {
 	text-decoration: underline;
 	text-decoration-color: rgba(255, 255, 255, 0.2);
 	text-underline-offset: 1px;
+}
+
+.svg-footer--logo {
+	width: 147px;
+	height: 49px;
+	fill: #fefefe;
 }
 
 .footer__about-us {
@@ -2681,8 +2769,6 @@ body {
 }
 .footer__contacts-phone-icon {
 	display: inline-block;
-	width: 12px;
-	height: 11px;
 }
 .footer__contacts-phone-number {
 	display: inline-block;
@@ -2706,6 +2792,13 @@ body {
 	line-height: 1.4545454545;
 }
 
+.svg-footer--call {
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	fill: #fefefe;
+}
+
 .footer__copyright {
 	padding-top: 23px;
 }
@@ -2720,20 +2813,24 @@ body {
 	top: 22.7%;
 	right: 3.2%;
 }
-.footer__button div[class*=hint]::after {
+
+.btn--footer {
+	position: relative;
+	width: 54px;
+	height: 48px;
+}
+
+button[class*=hint][class*=btn--footer]::after {
+	display: none;
+}
+
+button[class*=hint][class*=btn--footer]:hover::after {
 	content: "Наверх";
+	display: flex;
 	width: 89px;
 	right: 108%;
 	color: rgba(0, 0, 0, 0.6);
 	background-color: #fcfbfc;
-}
-.footer__button-hint {
-	position: relative;
-}
-
-.btn-square--footer {
-	width: 54px;
-	height: 48px;
 }
 
 .svg-arrow-up {

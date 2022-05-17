@@ -16,9 +16,9 @@
 	<div class="container">
 		<div class="header__inner">
 
-			<div class="header__logo">
-				<img class="image" src="assets/icons/logo.svg" alt="logo">
-			</div>
+			<svg class="svg-logo">
+				<use xlink:href="assets/icons/sprite.svg#logo"></use>
+			</svg>
 
 			<nav class="header__nav nav">
 				<ol class="nav__list">
@@ -31,9 +31,11 @@
 			</nav>
 
 			<div class="header__call">
-				<div class="header__call-icon">
-					<img class="image" src="assets/icons/call.svg" alt="logo">
-				</div>
+
+				<svg class="svg-call">
+					<use xlink:href="assets/icons/sprite.svg#call"></use>
+				</svg>
+
 				<a class="header__call-number" href="tel:80005553535">8 8000 555 3535</a>
 				<a class="header__call-order" href="#">Заказать обратный звонок</a>
 			</div>
@@ -42,73 +44,90 @@
 	</div>
 </header>
 
-
-<!-- ===== 2. HERO SECTION ===== -->
 <main>
 
+<!-- ===== 2. HERO SECTION ===== -->
+
 <section class="hero">
-	<div class="container">
 
 		<div class="hero__background">
-			<img class='image' src="./assets/img/FRAMES_0001s_0000_office_render.png" alt="glass partition">
-		</div>
 
-		<div class="hero__mark hero__mark--1st">
-			<img class="image" src="./assets/icons/mark.svg" alt="mark">
-		</div>
-
-		<div class="hero__mark hero__mark--2nd hero__mark--active">
-			<div class="hero__mark-wrapper hint--left"><!-- для позиционирования псевдоэлемента -->
-				<img class="image" src="./assets/icons/mark_active_down.svg" alt="mark">
+			<div class="hero__background-image">
+				<img class='image' src="./assets/img/FRAMES_0001s_0000_office_render.png" alt="glass partition">
 			</div>
-		</div>
+			
+			<div class="container">
 
-		<div class="hero__mark hero__mark--3rd">
-			<img class="image" src="./assets/icons/mark.svg" alt="mark">
-		</div>
-
-		<div class="hero__arrow-left">
-			<svg class="svg-arrow-left">
-				<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
-			</svg>
-		</div>
-
-
-		<div class="hero__offer">
-			<div class="hero__offer-inner">
-
-				<div class="hero__offer-header">
-					<h1 class="hero__title">
-						Офисные перегородки по низким ценам
-					</h1>
+				<div class="hero__offer">
+					<div class="hero__offer-inner">
+						<div class="hero__offer-header">
+							<h1 class="hero__title">
+								Офисные перегородки по низким ценам
+							</h1>
+						</div>
+						<div class="hero__offer-body">
+							<div class="hero__subtitle">
+								Помогаем организовать пространство более 10 лет<br>
+								Экспресс-монтаж офисных перегородок от 2800 руб. кв/м
+							</div>
+						</div>
+						<div class="hero__offer-footer">
+							<!-- 1st button -->
+							<button class="btn">
+								<span class="btn__icon">
+									<svg class="svg-zamer">
+										<use xlink:href="assets/icons/sprite.svg#zamer"></use>
+									</svg>
+								</span>
+								<span class="btn__title">Заказать замер</span>
+							</button>
+							<!-- 2nd button -->
+							<button class="btn btn--hero-offer">
+								<span class="btn__icon">
+									<svg class="svg-consult">
+										<use xlink:href="assets/icons/sprite.svg#consult"></use>
+									</svg>
+								</span>
+								<span class="btn__title">Консультация</span>
+							</button>
+						</div>
+					</div>
 				</div>
 
-				<div class="hero__offer-body">
-					<p class="hero__subtitle">
-						Помогаем организовать пространство более 10 лет<br>
-						Экспресс-монтаж офисных перегородок от 2800 руб. кв/м
-					</p>
-				</div>
+			</div>
 
-				<div class="hero__offer-footer">
-					<!-- 1st button -->
-					<button class="btn">
-						<span class="btn__icon">
-							<img class="image" src="./assets/icons/icon_zamer.svg" alt="measuring">
-						</span>
-						<span class="btn__title">Заказать замер</span>
-					</button>
-					<!-- 2nd button -->
-					<button class="btn btn--hero-offer">
-						<span class="btn__icon">
-							<img class="image" src="./assets/icons/icon_consult.svg" alt="consultation">
-						</span>
-						<span class="btn__title">Консультация</span>
-					</button>
 
+			<div class="hero__mark--1st">
+				<svg class="svg-mark">
+					<use xlink:href="assets/icons/sprite.svg#mark"></use>
+				</svg>
+			</div>
+			
+			<div class="hero__mark--2nd hero__mark--active">
+				<div class="hero__mark-wrapper hint--left"><!-- для позиционирования псевдоэлемента -->
+					<svg class="svg-mark-active-down">
+						<use xlink:href="assets/icons/sprite.svg#mark-active-down"></use>
+					</svg>
 				</div>
 			</div>
+
+			<div class="hero__mark--3rd">
+				<svg class="svg-mark">
+					<use xlink:href="assets/icons/sprite.svg#mark"></use>
+				</svg>
+			</div>
+
+			<div class="hero__btn-arrow-left">
+				<button class="btn btn--hero-arrow-left">
+					<svg class="svg-arrow-left">
+						<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
+					</svg>
+				</button>
+			</div>
+
 		</div>
+	
+	<div class="container">
 
 		<div class="hero__choice">
 
@@ -169,7 +188,9 @@
 			<!-- 1st -->
 			<div class="hero__advantages-item hero__advantages-item--1st">
 				<div class="hero__advantages-icon">
-					<img class="image" src="./assets/icons/ic_1.svg" alt="factory">
+					<svg class="svg-hero--advantages-1">
+						<use xlink:href="assets/icons/sprite.svg#hero--advantages-1"></use>
+					</svg>
 				</div>
 				<div class="hero__advantages-desc">
 					Быстрое производство и монтаж любых конструкций
@@ -178,7 +199,9 @@
 			<!-- 2nd -->
 			<div class="hero__advantages-item hero__advantages-item--2nd">
 				<div class="hero__advantages-icon">
-					<img class="image" src="./assets/icons/ic_2.svg" alt="quality">
+					<svg class="svg-hero--advantages-2">
+						<use xlink:href="assets/icons/sprite.svg#hero--advantages-2"></use>
+					</svg>
 				</div>
 				<div class="hero__advantages-desc">
 					Долговечность и экологичность наших конструкций (ГОСТ)
@@ -187,7 +210,9 @@
 			<!-- 3rd -->
 			<div class="hero__advantages-item hero__advantages-item--3rd">
 				<div class="hero__advantages-icon">
-					<img class="image" src="./assets/icons/ic_3.svg" alt="worker">
+					<svg class="svg-hero--advantages-3">
+						<use xlink:href="assets/icons/sprite.svg#hero--advantages-3"></use>
+					</svg>
 				</div>
 				<div class="hero__advantages-desc">
 					Профессиональные монтажники с опытом и чистая установка
@@ -196,7 +221,9 @@
 			<!-- 4th -->
 			<div class="hero__advantages-item hero__advantages-item--4th ">
 				<div class="hero__advantages-icon">
-					<img class="image" src="./assets/icons/ic_4.svg" alt="thumbs up">
+					<svg class="svg-hero--advantages-4">
+						<use xlink:href="assets/icons/sprite.svg#hero--advantages-4"></use>
+					</svg>
 				</div>
 				<div class="hero__advantages-desc">
 					Отличная цена и гибкие усоловия сотрудничества по договору
@@ -214,25 +241,21 @@
 
 <section class="product">
 
+	<!-- button calculation-->
 	<div class="product__btn-calc">
-		<div class="product__btn-calc-wrapper"> <!-- для позиционирования hint -->
-			<button class="btn-square">
-				<svg class="svg-calc">
-					<use xlink:href="assets/icons/sprite.svg#calc"></use>
-				</svg>
-			</button>
-		</div>
-
+		<button class="btn btn--product-calc hint--right">
+			<svg class="svg-calc">
+				<use xlink:href="assets/icons/sprite.svg#calc"></use>
+			</svg>
+		</button>
 	</div>
-
+	<!-- button ring-->
 	<div class="product__btn-ring">
-		<div class="product__btn-ring-wrapper hint--right"> 
-			<button class="btn btn-square">
-				<svg class="svg-ring">
-					<use xlink:href="assets/icons/sprite.svg#ring"></use>
-				</svg>
-			</button>
-		</div>
+		<button class="btn btn--product-ring hint--right">
+			<svg class="svg-ring">
+				<use xlink:href="assets/icons/sprite.svg#ring"></use>
+			</svg>
+		</button>
 	</div>
 
 	<div class="container">
@@ -616,7 +639,7 @@
 					<div class="grid-portfolio__price-back">Цена: &nbsp; <span class="hl">57 500 Р</span></div>
 				</div>
 				<div class="grid-portfolio__icon-back">
-					<button class="btn-square btn-square--portfolio-arrow">
+					<button class="btn btn--portfolio-arrow">
 						<svg class="svg-arrow-right">
 							<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 						</svg>
@@ -708,7 +731,6 @@
 		</span>
 	</button>
 
-	
 </section>
 
 
@@ -727,12 +749,12 @@
 				<div class="grid-glasstype__header">
 					<img class="image" src="./assets/img/glasstype/partition_1.jpg" alt="partition">
 					<div class="grid-glasstype__buttons-block">
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-left--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
 							</svg>
 						</button>
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-right--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -759,12 +781,12 @@
 				<div class="grid-glasstype__header">
 					<img class="image" src="./assets/img/glasstype/partition_2.jpg" alt="partition">
 					<div class="grid-glasstype__buttons-block">
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-left--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
 							</svg>
 						</button>
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-right--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -791,12 +813,12 @@
 				<div class="grid-glasstype__header">
 					<img class="image" src="./assets/img/glasstype/partition_3.jpg" alt="partition">
 					<div class="grid-glasstype__buttons-block">
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-left--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
 							</svg>
 						</button>
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-right--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -823,12 +845,12 @@
 				<div class="grid-glasstype__header">
 					<img class="image" src="./assets/img/glasstype/partition_4.jpg" alt="partition">
 					<div class="grid-glasstype__buttons-block">
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-left--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
 							</svg>
 						</button>
-						<button class="btn-square btn-square--glasstype">
+						<button class="btn btn--glasstype">
 							<svg class="svg-arrow-right--glasstype">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -869,12 +891,12 @@
 			<!-- image block -->
 			<div class="design__image">
 				<div class="design__image-buttons-block">
-					<button class="btn-square btn-square--design">
+					<button class="btn btn--design">
 						<svg class="svg-arrow-left--design">
 							<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
 						</svg>
 					</button>
-					<button class="btn-square btn-square--design">
+					<button class="btn btn--design">
 						<svg class="svg-arrow-right--design">
 							<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 						</svg>
@@ -1137,8 +1159,9 @@
 		<div class="charge__item charge__item--first">
 
 			<div class="charge__item-icon">
-				<div class="charge__item-icon-size--1">
-					<img class="image" src="./assets/icons/icon_price_1.svg" alt="thumbs up"></div>
+					<svg class="svg-charge--1">
+						<use xlink:href="assets/icons/sprite.svg#charge--1"></use>
+					</svg>
 			</div>
 
 			<div class="charge__item-content">
@@ -1157,8 +1180,9 @@
 		<div class="charge__item charge__item--second">
 
 			<div class="charge__item-icon">
-				<div class="charge__item-icon-size--2">
-					<img class="image" src="./assets/icons/icon_price_2.svg" alt="coins"></div>
+				<svg class="svg-charge--2">
+					<use xlink:href="assets/icons/sprite.svg#charge--2"></use>
+				</svg>
 			</div>
 
 			<div class="charge__item-content">
@@ -1177,8 +1201,9 @@
 		<div class="charge__item charge__item--third">
 
 			<div class="charge__item-icon">
-				<div class="charge__item-icon-size--3">
-					<img class="image" src="./assets/icons/icon_price_3.svg" alt="coins"></div>
+				<svg class="svg-charge--3">
+					<use xlink:href="assets/icons/sprite.svg#charge--3"></use>
+				</svg>
 			</div>
 
 			<div class="charge__item-content">
@@ -1195,6 +1220,7 @@
 
 	</div>
 </section>
+
 
 <!-- ===== 10. PRICELIST SECTION ===== -->
 
@@ -1317,9 +1343,9 @@
 					</div>
 					<div class="grid-steps__benefits">
 						<div class="grid-steps__benefits-icon">
-							<div class="grid-steps__benefits-icon-size--1">
-								<img class="image" src="./assets/icons/icon_step_1.svg" alt="project">
-							</div>
+							<svg class="svg-steps--1">
+								<use xlink:href="assets/icons/sprite.svg#steps--1"></use>
+							</svg>
 						</div>
 						<ul class="grid-steps__benefits-list">
 							<li class="grid-steps__benefits-list-item check-before">Приезжает наша бринада</li>
@@ -1338,9 +1364,9 @@
 					</div>
 					<div class="grid-steps__benefits">
 						<div class="grid-steps__benefits-icon">
-							<div class="grid-steps__benefits-icon-size--2">
-								<img class="image" src="./assets/icons/icon_step_2.svg" alt="measurements">
-							</div>
+							<svg class="svg-steps--2">
+								<use xlink:href="assets/icons/sprite.svg#steps--2"></use>
+							</svg>
 						</div>
 						<ul class="grid-steps__benefits-list">
 							<li class="grid-steps__benefits-list-item check-before">Разметка помещения</li>
@@ -1359,9 +1385,9 @@
 					</div>
 					<div class="grid-steps__benefits">
 						<div class="grid-steps__benefits-icon">
-							<div class="grid-steps__benefits-icon-size--3">
-								<img class="image" src="./assets/icons/icon_step_3.svg" alt="screw">
-							</div>
+							<svg class="svg-steps--3">
+								<use xlink:href="assets/icons/sprite.svg#steps--3"></use>
+							</svg>
 						</div>
 						<ul class="grid-steps__benefits-list">
 							<li class="grid-steps__benefits-list-item check-before">Доставляем материалы</li>
@@ -1380,9 +1406,9 @@
 					</div>
 					<div class="grid-steps__benefits">
 						<div class="grid-steps__benefits-icon">
-							<div class="grid-steps__benefits-icon-size--4">
-								<img class="image" src="./assets/icons/icon_step_4.svg" alt="instrument">
-							</div>
+							<svg class="svg-steps--4">
+								<use xlink:href="assets/icons/sprite.svg#steps--4"></use>
+							</svg>
 						</div>
 						<ul class="grid-steps__benefits-list">
 							<li class="grid-steps__benefits-list-item check-before">Крепление констукции</li>
@@ -1401,9 +1427,9 @@
 					</div>
 					<div class="grid-steps__benefits">
 						<div class="grid-steps__benefits-icon">
-							<div class="grid-steps__benefits-icon-size--5">
-								<img class="image" src="./assets/icons/icon_step_5.svg" alt="measurements">
-							</div>
+							<svg class="svg-steps--5">
+								<use xlink:href="assets/icons/sprite.svg#steps--5"></use>
+							</svg>
 						</div>
 						<ul class="grid-steps__benefits-list">
 							<li class="grid-steps__benefits-list-item check-before">Затяжка всех элементов</li>
@@ -1422,9 +1448,9 @@
 					</div>
 					<div class="grid-steps__benefits">
 						<div class="grid-steps__benefits-icon">
-							<div class="grid-steps__benefits-icon-size--6">
-								<img class="image" src="./assets/icons/icon_step_6.svg" alt="thumbs up">
-							</div>
+							<svg class="svg-steps--6">
+								<use xlink:href="assets/icons/sprite.svg#steps--6"></use>
+							</svg>
 						</div>
 						<ul class="grid-steps__benefits-list">
 							<li class="grid-steps__benefits-list-item check-before">Презентация работы</li>
@@ -1438,6 +1464,7 @@
 		</div>
 	</div>
 </section>
+
 
 <!-- ===== 12. BENEFITS SECTION ===== -->
 
@@ -1595,12 +1622,12 @@
 				<div class="furniture__brands-image-inner">
 					<img class="image" src="./assets/img/furniture/furniture_img.png" alt="furnirute">
 					<div class="furniture__brands-image-buttons-block">
-						<button class="btn-square btn-square--furniture">
+						<button class="btn btn--furniture">
 							<svg class="svg-arrow-left--furniture">
 								<use xlink:href="assets/icons/sprite.svg#arrow-left"></use>
 							</svg>
 						</button>
-						<button class="btn-square btn-square--furniture">
+						<button class="btn btn--furniture">
 							<svg class="svg-arrow-right--furniture">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -1636,7 +1663,7 @@
 						<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
 					</div>
 					<div class="news__button">
-						<button class="btn-square btn-square--news-secondary">
+						<button class="btn btn--news-secondary">
 							<svg class="svg-arrow-right--news">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -1656,7 +1683,7 @@
 						<div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</div>
 					</div>
 					<div class="news__button">
-						<button class="btn-square btn-square--news">
+						<button class="btn btn--news">
 							<svg class="svg-arrow-right--news">
 								<use xlink:href="assets/icons/sprite.svg#arrow-right"></use>
 							</svg>
@@ -1684,11 +1711,16 @@
 			<div class="question-faq__item">
 				<div class="question-faq__header">
 					<div class="question-faq__icon-question">
-						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+						<svg class="svg-question">
+							<use xlink:href="assets/icons/sprite.svg#question"></use>
+						</svg>
 					</div>
 					<div class="question-faq__title">Сколько стоит вызов для консультации и замера?</div>
 					<div class="question-faq__icon-toggle">
-						<img class="image" src="./assets/icons/faq_minus.svg" alt="toggle icon">
+						<svg class="svg-faq--minus">
+							<use xlink:href="assets/icons/sprite.svg#faq--minus"></use>
+						</svg>
+
 					</div>
 				</div>
 				<div class="question-faq__body">
@@ -1704,11 +1736,15 @@
 			<div class="question-faq__item">
 				<div class="question-faq__header">
 					<div class="question-faq__icon-question">
-						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+						<svg class="svg-question">
+							<use xlink:href="assets/icons/sprite.svg#question"></use>
+						</svg>
 					</div>
 					<div class="question-faq__title">Можно ли заключить договор без замера?</div>
 					<div class="question-faq__icon-toggle">
-						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+						<svg class="svg-faq--plus">
+							<use xlink:href="assets/icons/sprite.svg#faq--plus"></use>
+						</svg>
 					</div>
 				</div>
 				<div class="question-faq__body hidden">
@@ -1724,11 +1760,15 @@
 			<div class="question-faq__item">
 				<div class="question-faq__header">
 					<div class="question-faq__icon-question">
-						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+						<svg class="svg-question">
+							<use xlink:href="assets/icons/sprite.svg#question"></use>
+						</svg>
 					</div>
 					<div class="question-faq__title">Каков размер предоплаты по договору?</div>
 					<div class="question-faq__icon-toggle">
-						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+						<svg class="svg-faq--plus">
+							<use xlink:href="assets/icons/sprite.svg#faq--plus"></use>
+						</svg>
 					</div>
 				</div>
 				<div class="question-faq__body hidden">
@@ -1744,11 +1784,15 @@
 			<div class="question-faq__item">
 				<div class="question-faq__header">
 					<div class="question-faq__icon-question">
-						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+						<svg class="svg-question">
+							<use xlink:href="assets/icons/sprite.svg#question"></use>
+						</svg>
 					</div>
 					<div class="question-faq__title">Сколько дней ждать исполнение Заказа?</div>
 					<div class="question-faq__icon-toggle">
-						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+						<svg class="svg-faq--plus">
+							<use xlink:href="assets/icons/sprite.svg#faq--plus"></use>
+						</svg>
 					</div>
 				</div>
 				<div class="question-faq__body hidden">
@@ -1764,11 +1808,15 @@
 			<div class="question-faq__item">
 				<div class="question-faq__header">
 					<div class="question-faq__icon-question">
-						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+						<svg class="svg-question">
+							<use xlink:href="assets/icons/sprite.svg#question"></use>
+						</svg>
 					</div>
 					<div class="question-faq__title">Возможен ли монтаж в выходные дни?</div>
 					<div class="question-faq__icon-toggle">
-						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+						<svg class="svg-faq--plus">
+							<use xlink:href="assets/icons/sprite.svg#faq--plus"></use>
+						</svg>
 					</div>
 				</div>
 				<div class="question-faq__body hidden">
@@ -1784,11 +1832,15 @@
 			<div class="question-faq__item">
 				<div class="question-faq__header">
 					<div class="question-faq__icon-question">
-						<img class="image" src="./assets/icons/question_icon.svg" alt="question icon">
+						<svg class="svg-question">
+							<use xlink:href="assets/icons/sprite.svg#question"></use>
+						</svg>
 					</div>
 					<div class="question-faq__title">Есть ли готовые изделия на Вашем складе?</div>
 					<div class="question-faq__icon-toggle">
-						<img class="image" src="./assets/icons/faq_plus.svg" alt="toggle icon">
+						<svg class="svg-faq--plus">
+							<use xlink:href="assets/icons/sprite.svg#faq--plus"></use>
+						</svg>
 					</div>
 				</div>
 				<div class="question-faq__body hidden">
@@ -1815,10 +1867,10 @@
 			<!-- 1st item -->
 			<div class="grid-order__1st">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--1 number-before--1">
-							<img class="image" src="./assets/icons/icon_work_1.svg" alt="cell phone">
-						</div>
+					<div class="grid-order__icon number-before--1">
+						<svg class="svg-order--1">
+							<use xlink:href="assets/icons/sprite.svg#order--1"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Вы оставляете заявку на сайте, по телефону или лично</div>
 				</div>
@@ -1826,10 +1878,10 @@
 			<!-- 2nd item -->
 			<div class="grid-order__2nd">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--2 number-before--2">
-							<img class="image" src="./assets/icons/icon_work_2.svg" alt="conversation">
-						</div>
+					<div class="grid-order__icon number-before--2"">
+						<svg class="svg-order--2">
+							<use xlink:href="assets/icons/sprite.svg#order--2"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Наш специалист выезжает на консультацию и замер</div>
 				</div>
@@ -1837,10 +1889,10 @@
 			<!-- 3rd item -->
 			<div class="grid-order__3rd">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--3 number-before--3">
-							<img class="image" src="./assets/icons/icon_work_3.svg" alt="project">
-						</div>
+					<div class="grid-order__icon number-before--3">
+						<svg class="svg-order--3">
+							<use xlink:href="assets/icons/sprite.svg#order--3"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Высылаем Вам сметный расчет Вашего проекта</div>
 				</div>
@@ -1848,10 +1900,10 @@
 			<!-- 4th item -->
 			<div class="grid-order__4th">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--4 number-before--4">
-							<img class="image" src="./assets/icons/icon_work_4.svg" alt="contract">
-						</div>
+					<div class="grid-order__icon number-before--4">
+						<svg class="svg-order--4">
+							<use xlink:href="assets/icons/sprite.svg#order--4"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Согласовываем детали и заключаем договор</div>
 				</div>
@@ -1859,10 +1911,10 @@
 			<!-- 5th item -->
 			<div class="grid-order__5th">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--5 number-before--5">
-							<img class="image" src="./assets/icons/icon_work_5.svg" alt="production">
-						</div>
+					<div class="grid-order__icon number-before--5">
+						<svg class="svg-order--5">
+							<use xlink:href="assets/icons/sprite.svg#order--5"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Запускаем<br>конструкцию в производство</div>
 				</div>
@@ -1870,10 +1922,10 @@
 			<!-- 6th item -->
 			<div class="grid-order__6th">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--6 number-before--6">
-							<img class="image" src="./assets/icons/icon_work_6.svg" alt="truck">
-						</div>
+					<div class="grid-order__icon number-before--6">
+						<svg class="svg-order--6">
+							<use xlink:href="assets/icons/sprite.svg#order--6"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Доставляем готовые изделия на объект</div>
 				</div>
@@ -1881,10 +1933,10 @@
 			<!-- 7th item -->
 			<div class="grid-order__7th">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--7 number-before--7">
-							<img class="image" src="./assets/icons/icon_work_7.svg" alt="partiton">
-						</div>
+					<div class="grid-order__icon number-before--7">
+						<svg class="svg-order--7">
+							<use xlink:href="assets/icons/sprite.svg#order--7"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Выполняем монтаж стеклянных перегородок</div>
 				</div>
@@ -1892,10 +1944,10 @@
 			<!-- 8th item -->
 			<div class="grid-order__8th">
 				<div class="grid-order__item">
-					<div class="grid-order__icon">
-						<div class="grid-order__icon-size--8 number-before--8">
-							<img class="image" src="./assets/icons/icon_work_8.svg" alt="thumbs up">
-						</div>
+					<div class="grid-order__icon number-before--8">
+						<svg class="svg-order--8">
+							<use xlink:href="assets/icons/sprite.svg#order--8"></use>
+						</svg>
 					</div>
 					<div class="grid-order__desc">Производим регулировку, тестирование и сдачу Заказчику</div>
 				</div>
@@ -1939,18 +1991,18 @@
 
 </main>
 
+
 <!-- ===== 19. FOOTER ===== -->
 
 <footer class="footer">
+
 	<!-- button -->
 	<div class="footer__button">
-		<div class="footer__button-hint hint--right">
-			<button class="btn-square btn-square--footer">
-				<svg class="svg-arrow-up">
-					<use xlink:href="assets/icons/sprite.svg#arrow-up"></use>
-				</svg>
-			</button>
-		</div>
+		<button class="btn btn--footer hint--right">
+			<svg class="svg-arrow-up">
+				<use xlink:href="assets/icons/sprite.svg#arrow-up"></use>
+			</svg>
+		</button>
 	</div>
 
 	<div class="container">
@@ -1958,7 +2010,9 @@
 			<!-- 1st column -->
 			<div class="footer__info">
 				<div class="footer__info-logo">
-					<img class="image" src="./assets/icons/logo.svg" alt="logo">
+					<svg class="svg-footer--logo">
+						<use xlink:href="assets/icons/sprite.svg#logo"></use>
+					</svg>
 				</div>
 				<div class="footer__info-working-hours">
 					Будни: с 6 до 22<br>Выходные: с 8 до 22
@@ -2002,7 +2056,9 @@
 				<div class="footer__contacts-title">Контакты</div>
 				<div class="footer__contacts-phone">
 					<div class="footer__contacts-phone-icon">
-						<img class="image" src="./assets/icons/call.svg" alt="telephone">
+						<svg class="svg-footer--call">
+							<use xlink:href="assets/icons/sprite.svg#call"></use>
+						</svg>
 					</div>
 					<div class="footer__contacts-phone-number">8 8000 555 3535</div>
 				</div>
