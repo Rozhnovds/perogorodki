@@ -777,15 +777,22 @@
 	.news {
 		.headline {
 			flex-direction: column;
-			gap: 8px;
+			
+			
+			align-items: flex-start;
+			gap: 20px;
+
+			.headline__consultation {
+				align-self: flex-end;
+			}
 		}
 
 		&__list {
-			margin-top: 30px;
+			margin-top: 15px;
 		}
 	} 
 
-
+	
 	/* ===== 15. FAQ SECTION ===== */
 
 	.faq {
