@@ -12,7 +12,7 @@
 
 <!-- ===== 1. HEADER ===== -->
 
-<header class="header">
+<header class="header hidden"> <!-- hidden -->
 	<div class="container">
 		<div class="header__inner">
 
@@ -23,7 +23,7 @@
 			<nav class="header__nav nav">
 				<ol class="nav__list">
 					<li class="nav__items"><a href="#" class="nav__link">НАША ПРОДУКЦИЯ</a></li>
-					<li class="nav__items"><a href="#" class="nav__link">ПРОЕКТЫ</a></li>
+					<li class="nav__items"><`a href="#" class="nav__link">ПРОЕКТЫ</a></li>
 					<li class="nav__items"><a href="#" class="nav__link">ВИДЫ МАТЕРИАЛОВ</a></li>
 					<li class="nav__items"><a href="#" class="nav__link">КАЛЬКУЛЯТОР СТОИМОСТИ</a></li>
 					<li class="nav__items"><a href="#" class="nav__link">КОНТАКТЫ</a></li>
@@ -48,7 +48,7 @@
 
 <!-- ===== 2. HERO SECTION ===== -->
 
-<section class="hero">
+<section class="hero hidden"> <!-- hidden -->
 
 		<div class="hero__background">
 
@@ -134,7 +134,7 @@
 			<div class="hero__choice-header">
 				<div class="hero__choice-title">От разработки проекта до монтажа!</div>
 				<div class="hero__choice-price">
-					<div class="hero__choice-price-value">Цена от: &nbsp;<span class="hl">2700 р. кв/м</span>
+					<div class="hero__choice-price-value">Цена от:<span class="hl">2700 р. кв/м</span>
 					</div>
 					<div class="hero__choice-price-desc">Внимание! Уточняйте текущие цены на продукцию у <a href="#" class="hero__choice-managers">наших менеджеров</a></div>
 				</div>
@@ -270,16 +270,16 @@
 				</div>
 				<div class="grid-product__title-back">Стационарные стеклянные перегородки из закаленного стекла</div>
 				<div class="grid-product__desc-back">Производим изготовление и установку стационарных стеклянных перегородок для зонирования пространства в жилых, офисных и торговых помещениях.</div>
-				<ul class="grid-product__options-back">
-					<li class="grid-product__options-item-back">- &nbsp;Каркасные Simplex</li>
-					<li class="grid-product__options-item-back">- &nbsp;Цельностеклянные Nix</li>
-					<li class="grid-product__options-item-back">- &nbsp;С двойным стеклом Dual</li>
+				<ul class="grid-product__options-list-back">
+					<li class="grid-product__options-item-back">Каркасные Simplex</li>
+					<li class="grid-product__options-item-back">Цельностеклянные Nix</li>
+					<li class="grid-product__options-item-back">С двойным стеклом Dual</li>
 				</ul>
 				<div class="grid-product__order-back">Под заказ от 5 дней</div>
 				<div class="grid-product__price-back">Цена от: <span class="hl">2700 р. кв/м</span></div>
-				<button class="btn btn--product">
+				<a href="#" class="btn btn--product">
 					<span class="btn__title">Подробнее</span>
-				</button>
+				</a>
 			</div>
 			
 			<!-- 2nd item -->
@@ -287,7 +287,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic2.jpg" alt="partition">
+							<picture class="image" title="Межкомнатные перегородки">
+								<source srcset="./assets/img/product/pic2.jpg">
+								<img src="./assets/img/product/pic2.jpg" alt="Межкомнатные перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -299,10 +302,10 @@
 						<div class="grid-product__title-front">Межкомнатные перегородки</div>
 						<div class="grid-product__desc-front">Перегородки из стекла для комфортного зонирования комнат.</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3600 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">3600 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -313,7 +316,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic3.png" alt="partition">
+							<picture class="image" title="Офисные перегородки">
+								<source srcset="./assets/img/product/pic3.png">
+								<img src="./assets/img/product/pic3.png" alt="Офисные перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -326,10 +332,10 @@
 						<div class="grid-product__desc-front">Перегородки из стекла для выгораживания пространства в офисных помещениях.
 						</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">4100 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">4100 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -340,7 +346,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic4.png" alt="partition">
+							<picture class="image" title="Раздвижные перегородки">
+								<source srcset="./assets/img/product/pic4.png">
+								<img src="./assets/img/product/pic4.png" alt="Раздвижные перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -352,10 +361,10 @@
 						<div class="grid-product__title-front">Раздвижные перегородки</div>
 						<div class="grid-product__desc-front">Раздвижные стеклянные перегородки из закаленного стекла.</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">4900 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">4900 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -366,7 +375,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic5.png" alt="partition">
+							<picture class="image" title="Лофт перегородки">
+								<source srcset="./assets/img/product/pic5.png">
+								<img src="./assets/img/product/pic5.png" alt="Лофт перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -378,10 +390,10 @@
 						<div class="grid-product__title-front">Лофт перегородки</div>
 						<div class="grid-product__desc-front">Перегородки из стекла для комфортного зонирования комнат.</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3700 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">3700 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -392,7 +404,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic6.png" alt="partition">
+							<picture class="image" title="Мобильные перегородки">
+								<source srcset="./assets/img/product/pic6.png">
+								<img src="./assets/img/product/pic6.png" alt="Мобильные перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -405,10 +420,10 @@
 						<div class="grid-product__desc-front">Перегородки из стекла для выгораживания пространства в офисныхпомещениях.
 						</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">2100 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">2100 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -419,7 +434,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic7.png" alt="partition">
+							<picture class="image" title="Перегородки для зонирования">
+								<source srcset="./assets/img/product/pic7.png">
+								<img src="./assets/img/product/pic7.png" alt="Перегородки для зонирования">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -428,13 +446,13 @@
 						</div>
 					</div>
 					<div class="grid-product__content-front">
-						<div class="grid-product__title-front">Перегородки для зонирования </div>
+						<div class="grid-product__title-front">Перегородки для зонирования</div>
 						<div class="grid-product__desc-front">Стеклянные перегородки для зонирования комнат.</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3700 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">3700 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -445,7 +463,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic8.png" alt="partition">
+							<picture class="image" title="Торговые перегородки">
+								<source srcset="./assets/img/product/pic8.png">
+								<img src="./assets/img/product/pic8.png" alt="Торговые перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -457,10 +478,10 @@
 						<div class="grid-product__title-front">Торговые перегородки</div>
 						<div class="grid-product__desc-front">Перегородки из стекла для разграничения торговых помещений.</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">5100 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">5100 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -471,7 +492,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic9.png" alt="partition">
+							<picture class="image" title="Перегородки в квартире">
+								<source srcset="./assets/img/product/pic9.png">
+								<img src="./assets/img/product/pic9.png" alt="Перегородки в квартире">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -483,10 +507,10 @@
 						<div class="grid-product__title-front">Перегородки в квартире</div>
 						<div class="grid-product__desc-front">Стационарные стеклянные перегородки для разграничения квартиры.</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3800 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">3800 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -497,7 +521,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic10.png" alt="partition">
+							<picture class="image" title="Недорогие перегородки">
+								<source srcset="./assets/img/product/pic10.png">
+								<img src="./assets/img/product/pic10.png" alt="Недорогие перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -509,10 +536,10 @@
 						<div class="grid-product__title-front">Недорогие перегородки</div>
 						<div class="grid-product__desc-front">Стеклянные перегородки эконом сегмента</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">2900 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">2900 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -523,7 +550,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic11.png" alt="partition">
+							<picture class="image" title="Душевые перегородки">
+								<source srcset="./assets/img/product/pic11.png">
+								<img src="./assets/img/product/pic11.png" alt="Душевые перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -535,10 +565,10 @@
 						<div class="grid-product__title-front">Душевые перегородки</div>
 						<div class="grid-product__desc-front">Стильные перегородки из стекла для ванной и душевых</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3200 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">3200 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -549,7 +579,10 @@
 				<div class="grid-product__item-front">
 					<div class="grid-product__image-wrapper-front">
 						<div class="grid-product__image-front">
-							<img class="image" src="./assets/img/product/pic12.png" alt="partition">
+							<picture class="image" title="Складные перегородки">
+								<source srcset="./assets/img/product/pic12.png">
+								<img src="./assets/img/product/pic12.png" alt="Складные перегородки">
+							</picture>
 							<div class="grid-product__icon-front icon-search">	
 								<svg class="svg-search">
 									<use xlink:href="assets/icons/sprite.svg#search"></use>
@@ -561,10 +594,10 @@
 						<div class="grid-product__title-front">Складные перегородки</div>
 						<div class="grid-product__desc-front">Стеклянные перегородки, складываемые гармошкой</div>
 						<div class="grid-product__order-front">Под заказ от 5 дней</div>
-						<div class="grid-product__price-front">Цена от: &nbsp;<span class="hl">3000 р. кв/м</span></div>
-						<button class="btn btn--product">
+						<div class="grid-product__price-front">Цена от:<span class="hl">3000 р. кв/м</span></div>
+						<a href="#" class="btn btn--product">
 							<span class="btn__title">Подробнее</span>
-						</button>
+						</a>
 					</div>
 
 				</div>	
@@ -582,8 +615,13 @@
 		<div class="request__inner">
 
 			<div class="request__content">
-				<h2 class="request__title">Узнайте цену и сроки</h2>
-				<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
+
+				<div class="request__text">
+					<h2 class="request__title">Узнайте цену и сроки</h2>
+					<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
+				</div>
+
+
 				<ul class="request__list">
 					<li class="request__list-item"><span class="hl">Цены: </span>от 2682 руб/м2</li>
 					<li class="request__list-item"><span class="hl">Сроки: </span>от 7 до 15 дней</li>
@@ -636,7 +674,7 @@
 					<div class="grid-portfolio__desc-back">Произвели изготовление и установку стационарных стеклянных перегородок для зонирования пространства в офисе, 
 						Краснопресненская наб. «Москва Сити»</div>
 					<div class="grid-portfolio__order-back">Изготовление и монтаж - 10 дней</div>
-					<div class="grid-portfolio__price-back">Цена: &nbsp; <span class="hl">57 500 Р</span></div>
+					<div class="grid-portfolio__price-back">Цена:<span class="hl">57 500 Р</span></div>
 				</div>
 				<div class="grid-portfolio__icon-back">
 					<button class="btn btn--portfolio-arrow">
@@ -734,9 +772,9 @@
 </section>
 
 
-<!-- ===== 6. PORTFOLIO SECTION ===== -->
+<!-- ===== 6. GLASSTYPE SECTION ===== -->
 
-<section class="glasstype">
+<section class="glasstype hidden"> <!-- hidden -->
 	<div class="container">
 		<div class="glasstype__headline headline">
 			<h2 class="headline__title">Тип стекла для стеклянных перегородок</h2>
@@ -834,7 +872,7 @@
 							</div>
 						</div>
 						<div class="grid-glasstype__content">
-							<div class="grid-glasstype__title">Армирtованное</div>
+							<div class="grid-glasstype__title">Армированное</div>
 							<div class="grid-glasstype__desc">Стекло с внутренней арматурной сеткой. Обладает высокой конструкционной прочностью, безопасно для окружающих рекомендуется к установке в общественных местах с высокой проходимостью.</div>
 						</div>
 				</div>
@@ -880,7 +918,7 @@
 
 <!-- ===== 7. DESIGN SECTION ===== -->
 
-<section class="design">
+<section class="design hidden"> <!-- hidden -->
 	<div class="container">
 		<div class="design__headline headline">
 			<h2 class="headline__title">Оформление стеклянных перегородок </h2>
@@ -980,7 +1018,7 @@
 
 <!-- ===== 8. CALCULATOR SECTION ===== -->
 
-<section class="calculator">
+<section class="calculator hidden"> <!-- hidden -->
 	<div class="container">
 
 		<div class="calculator__headline headline">
@@ -1125,7 +1163,7 @@
 					</div>
 					<!-- 7th item -->
 					<div class="grid-calculator__7th">
-						<div class="calculator__price">Цена от: &nbsp;<span class="hl">45 500 Р
+						<div class="calculator__price">Цена от:<span class="hl">45 500 Р
 						</span></div>
 					</div>
 
@@ -1170,9 +1208,9 @@
 			</div>
 
 			<div class="charge__item-price">
-				<div class="charge__item-price-inner">
-					Цены от<br><span class="hl">3 900 Р</span><br>за 1 кв.м.
-				</div>
+				<div class="charge__item-price-line">Цены от</div>
+				<div class="charge__item-price-line hl">3 900 Р</div>
+				<div class="charge__item-price-line">за 1 кв.м.</div>
 			</div>
 		</div>
 
@@ -1191,9 +1229,9 @@
 			</div>
 
 			<div class="charge__item-price">
-				<div class="charge__item-price-inner">
-					Цены от<br><span class="hl">1 000 Р</span><br>за 1 кв.м.
-				</div>
+				<div class="charge__item-price-line">Цены от</div>
+				<div class="charge__item-price-line hl">1 000 Р</div>
+				<div class="charge__item-price-line">за 1 кв.м.</div>
 			</div>
 		</div>
 
@@ -1212,9 +1250,9 @@
 			</div>
 
 			<div class="charge__item-price">
-				<div class="charge__item-price-inner">
-					При заказе от<br><span class="hl">50 000 Р</span><br><span class="underlined">Скидка 10%</span>
-				</div>
+				<div class="charge__item-price-line">Цены от</div>
+				<div class="charge__item-price-line hl">50 000 Р</div>
+				<div class="charge__item-price-line">Скидка 10%</div>
 			</div>
 		</div>
 
@@ -1303,22 +1341,24 @@
 			</table>
 		</div>
 
-		<div class="pricelist__consultation">
-			<div class="pricelist__consultation-content">
-				<div class="pricelist__consultation-title">Бесплатная консультация и вызов замерщика</div>
-				<ul class="pricelist__consultation-action-list">
-					<li class="pricelist__consultation-action-item">Подберем конструкцию</li>
-					<li class="pricelist__consultation-action-item">Сделаем замер</li>
-					<li class="pricelist__consultation-action-item">Рассчитаем стоимость</li>
-				</ul>
-			</div>
-			<div class="pricelist__consultation-buttons-block">
-				<button class="btn btn--pricelist">
-					<span class="btn__title">Вызвать замерщика</span>
-				</button>
-				<button class="btn btn--pricelist btn--pricelist-secondary">
-					<span class="btn__title">Нужна консультация</span>
-				</button>
+		<div class="pricelist__consultation-wrapper">
+			<div class="pricelist__consultation">
+				<div class="pricelist__consultation-content">
+					<div class="pricelist__consultation-title">Бесплатная консультация и вызов замерщика</div>
+					<ul class="pricelist__consultation-action-list">
+						<li class="pricelist__consultation-action-item">Подберем конструкцию</li>
+						<li class="pricelist__consultation-action-item">Сделаем замер</li>
+						<li class="pricelist__consultation-action-item">Рассчитаем стоимость</li>
+					</ul>
+				</div>
+				<div class="pricelist__consultation-buttons-block">
+					<button class="btn btn--pricelist">
+						<span class="btn__title">Вызвать замерщика</span>
+					</button>
+					<button class="btn btn--pricelist btn--pricelist-secondary">
+						<span class="btn__title">Нужна консультация</span>
+					</button>
+				</div>
 			</div>
 		</div>
 
@@ -1478,14 +1518,14 @@
 			<div class="grid-benefits__1st">
 				<div class="grid-benefits__item">
 					<div class="grid-benefits__number">01</div>
-					<div class="grid-benefits__caption">Красивый и<br>современный дизайн<br>наших перегородок</div>
+					<div class="grid-benefits__caption">Красивый и современный дизайн наших перегородок</div>
 				</div>
 			</div>
 			<!-- 2nd item -->
 			<div class="grid-benefits__2nd">
 				<div class="grid-benefits__item">
 					<div class="grid-benefits__number">02</div>
-					<div class="grid-benefits__caption">Трансформация под<br>разные мероприятия и<br>любые задачи</div>
+					<div class="grid-benefits__caption">Трансформация под разные мероприятия и любые задачи</div>
 				</div>
 			</div>
 			<!-- 3rd item -->
@@ -1499,7 +1539,7 @@
 			<div class="grid-benefits__4th">
 				<div class="grid-benefits__item">
 					<div class="grid-benefits__number">04</div>
-					<div class="grid-benefits__caption">Выделение отдельной<br>спальной или рабочей зоны<br>в общей комнате</div>
+					<div class="grid-benefits__caption">Выделение отдельной спальной или рабочей зоны в общей комнате</div>
 				</div>
 			</div>
 			<!-- 5th item -->
@@ -1513,7 +1553,7 @@
 			<div class="grid-benefits__6th">
 				<div class="grid-benefits__item">
 					<div class="grid-benefits__number">06</div>
-					<div class="grid-benefits__caption">Разграничение зон для<br>отдыха и для работы<br>вашего персонала</div>
+					<div class="grid-benefits__caption">Разграничение зон для отдыха и для работы вашего персонала</div>
 				</div>
 			</div>
 			<!-- 7th item -->
@@ -1541,7 +1581,7 @@
 			<div class="grid-benefits__10th">
 				<div class="grid-benefits__item">
 					<div class="grid-benefits__number">10</div>
-					<div class="grid-benefits__caption">Дополнительный заработок<br>на арендной плате</div>
+					<div class="grid-benefits__caption">Дополнительный заработок на арендной плате</div>
 				</div>
 			</div>
 			<!-- 11th item -->
@@ -1557,9 +1597,9 @@
 </section>
 
 
-<!-- ===== 14. FURNITURE SECTION ===== -->
+<!-- ===== 13. FURNITURE SECTION ===== -->
 
-<section class="furnirute">
+<section class="furnirute hidden"> <!-- hidden -->
 	<div class="container">
 		<div class="furniture__headline headline">
 			<h2 class="headline__title">Мы применяем фурнитуру и комплектующие<br>от проверенных производителей</h2>
@@ -1641,7 +1681,7 @@
 </section>
 
 
-<!-- ===== 15. NEWS SECTION ===== -->
+<!-- ===== 14. NEWS SECTION ===== -->
 
 <section class="news">
 	<div class="container">
@@ -1697,7 +1737,7 @@
 </section>
 
 
-<!-- ===== 16. FAQ SECTION ===== -->
+<!-- ===== 15. FAQ SECTION ===== -->
 
 <section class="faq">
 	<div class="container">
@@ -1729,7 +1769,7 @@
 							<use xlink:href="assets/icons/sprite.svg#quotes"></use>
 						</svg>
 					</div>
-					<div class="question-faq__answer">Если продолжительность замера не превышает 30-ти минут или по результату заключается договор, оплата не берется.<br>В остальных случаях берется плата в размере 1000 руб.</div>
+					<div class="question-faq__answer">Если продолжительность замера не превышает 30-ти минут или по результату заключается договор, оплата не берется. В остальных случаях берется плата в размере 1000 руб.</div>
 				</div>
 			</div>
 			<!-- 2nd item -->
@@ -1857,7 +1897,7 @@
 </section>
 
 
-<!-- ===== 17. ORDER SECTION ===== -->
+<!-- ===== 16. ORDER SECTION ===== -->
 
 <section class="order">
 	<div class="container">
@@ -1878,7 +1918,7 @@
 			<!-- 2nd item -->
 			<div class="grid-order__2nd">
 				<div class="grid-order__item">
-					<div class="grid-order__icon number-before--2"">
+					<div class="grid-order__icon number-before--2">
 						<svg class="svg-order--2">
 							<use xlink:href="assets/icons/sprite.svg#order--2"></use>
 						</svg>
@@ -1958,15 +1998,20 @@
 </section>
 
 
-<!-- ===== 18. REQUEST SECTION 2  (FULL COPY OF 4TH SECTION) ===== -->
+<!-- ===== 17. REQUEST SECTION 2  (FULL COPY OF 4TH SECTION) ===== -->
 
 <section class="request">
 	<div class="container">
 		<div class="request__inner">
 
 			<div class="request__content">
-				<h2 class="request__title">Узнайте цену и сроки</h2>
-				<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
+
+				<div class="request__text">
+					<h2 class="request__title">Узнайте цену и сроки</h2>
+					<div class="request__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами для уточнения деталей вашего проекта</div>
+				</div>
+
+
 				<ul class="request__list">
 					<li class="request__list-item"><span class="hl">Цены: </span>от 2682 руб/м2</li>
 					<li class="request__list-item"><span class="hl">Сроки: </span>от 7 до 15 дней</li>
@@ -1994,7 +2039,7 @@
 
 <!-- ===== 19. FOOTER ===== -->
 
-<footer class="footer">
+<footer class="footer hidden"> <!-- hidden -->
 
 	<!-- button -->
 	<div class="footer__button">

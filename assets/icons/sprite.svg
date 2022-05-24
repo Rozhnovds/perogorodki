@@ -283,8 +283,6 @@
 			</path>
 		</symbol>
 
-<!-- ??? Если поменять местами faq-plus и faq-minus, то faq-plus не отразится -->
-
 		<!-- faq-minus -->
 		<symbol id="faq--minus" viewBox="0 0 43.91 43.91">
   			<path style="fill:white;fill-opacity:0.200000" d="M21.96 43.91c12.13,0 21.96,-9.83 21.96,-21.96 0,-12.13 -9.83,-21.96 -21.96,-21.96 -12.13,0 -21.96,9.83 -21.96,21.96 0,12.13 9.83,21.96 21.96,21.96z"/>
@@ -293,8 +291,24 @@
 			<rect style="fill:white" x="18.89" y="21.24" width="6.13" height="1.43" rx="54.1" ry="75.1"/>
 		</symbol>
 
+		<!-- faq-plus test -->
+		<symbol id="faq--plus-test" viewBox="0 0 43.91 43.91">
+			<path style="fill:white;fill-opacity:0.501961" d="M21.96 38.82c9.31,0 16.86,-7.55 16.86,-16.86 0,-9.31 -7.55,-16.86 -16.86,-16.86 -9.31,0 -16.86,7.55 -16.86,16.86 0,9.31 7.55,16.86 16.86,16.86z"/>
+			<circle style="fill:#FDB44B" cx="21.96" cy="21.96" r="11.66"/>
+			<rect style="fill:white" class="fil3" x="18.89" y="21.24" width="6.13" height="1.43" rx="54.1" ry="75.1"/>
+			<rect style="fill:white" transform="matrix(1.69744E-14 -0.640917 0.889635 2.35616E-14 21.24 25.0188)" width="9.56" height="1.61" rx="84.41" ry="84.41"/>
+		</symbol>
+
 		<!-- faq-plus -->
-		<symbol id="faq--plus" viewBox="0 0 43.91 43.91">
+		<symbol id="faq--plus" viewBox="507.559 233.15 33.72 33.72">
+			<path class="fil1" d="M21.96 38.82c9.31,0 16.86,-7.55 16.86,-16.86 0,-9.31 -7.55,-16.86 -16.86,-16.86 -9.31,0 -16.86,7.55 -16.86,16.86 0,9.31 7.55,16.86 16.86,16.86z" style="fill: rgb(255, 255, 255); fill-opacity: 0.501961;" transform="matrix(1, 0, 0, 1, 502.458588, 228.049988)"></path>
+			<circle class="fil2" cx="21.96" cy="21.96" r="11.66" style="fill: rgb(253, 180, 75);" transform="matrix(1, 0, 0, 1, 502.458588, 228.049988)"></circle>
+			<rect class="fil3" x="18.89" y="21.24" width="6.13" height="1.43" rx="54.1" ry="75.1" style="fill: rgb(255, 255, 255);" transform="matrix(1, 0, 0, 1, 502.458588, 228.049988)"></rect>
+			<rect class="fil3" transform="matrix(0, -0.640917, 0.889635, 0, 523.698587, 253.068789)" width="9.56" height="1.61" rx="84.41" ry="84.41" style="fill: rgb(255, 255, 255);"></rect>
+		</symbol>
+
+		<!-- faq-plus-active (extra wave around) -->
+		<symbol id="faq--plus-active" viewBox="0 0 43.91 43.91">
   			<path style="fill:white;fill-opacity:0.200000" d="M21.96 43.91c12.13,0 21.96,-9.83 21.96,-21.96 0,-12.13 -9.83,-21.96 -21.96,-21.96 -12.13,0 -21.96,9.83 -21.96,21.96 0,12.13 9.83,21.96 21.96,21.96z"/>
 			<path style="fill:white;fill-opacity:0.501961" d="M21.96 38.82c9.31,0 16.86,-7.55 16.86,-16.86 0,-9.31 -7.55,-16.86 -16.86,-16.86 -9.31,0 -16.86,7.55 -16.86,16.86 0,9.31 7.55,16.86 16.86,16.86z"/>
 			<circle style="fill:#FDB44B" cx="21.96" cy="21.96" r="11.66"/>
