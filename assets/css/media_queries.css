@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/* ===================================================== */
-/* =================== MEDIA QUERIES =================== */
-/* ===================================================== */
-/* === max-width: 1299px, 991px, 767px, 575px, 479px === */
-/* ===================================================== */
+/* ============================================== */
+/* ================ MEDIA QUERIES =============== */
+/* ============================================== */
+/* === max-width: 1299px, 991px, 767px, 575px === */
+/* ============================================== */
 @media (max-width: 1759px) {
 	/* ===== 5. PORTFOLIO SECTION ====== */
 	.grid-portfolio__item-front .image {
@@ -262,7 +262,7 @@
 		padding: 20px;
 	}
 	.grid-product__options-list-back {
-		margin: 20px 0;
+		margin-bottom: 20px;
 	}
 	.grid-product__image-front .image {
 		object-fit: cover;
@@ -471,8 +471,20 @@
 	}
 
 	/* ====== 3. PRODUCT SECTION ======= */
+	.product .container {
+		max-width: none;
+	}
+
 	.grid-product {
-		grid-template-columns: repeat(auto-fit, minmax(290px, 372px));
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		grid-auto-rows: minmax(520px, 1fr);
+		gap: 20px;
+	}
+	.grid-product__options-list-back {
+		display: none;
+	}
+	.grid-product__price-front .text-hl, .grid-product__price-back .text-hl {
+		font-size: 20px;
 	}
 
 	/* ====== 4. REQUEST SECTION ======= */
@@ -730,7 +742,38 @@
 	}
 
 	.grid-product {
-		grid-template-rows: repeat(auto-fit, minmax(520px, 1fr));
+		grid-template-rows: none;
+		grid-auto-rows: auto;
+		grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	}
+	.grid-product__image-front {
+		height: 185px;
+	}
+	.grid-product__content-front {
+		padding: 205px 20px 20px 20px;
+	}
+	.grid-product__desc-back {
+		margin-bottom: 17px;
+	}
+	.grid-product__price-front .text-hl, .grid-product__price-back .text-hl {
+		font-size: 19px;
+		margin-top: 3px;
+	}
+	.grid-product__price-front, .grid-product__price-back {
+		margin-bottom: 10px;
+	}
+	.grid-product__order-front, .grid-product__order-back {
+		margin-bottom: 7px;
+	}
+	.grid-product__desc-front, .grid-product__desc-back, .grid-product__order-front, .grid-product__order-back {
+		font-size: 13px;
+	}
+	.grid-product__title-front, .grid-product__title-back {
+		font-size: 15px;
+	}
+
+	.btn--product {
+		flex: 0 0 40px;
 	}
 
 	/* ====== 4. REQUEST SECTION ======= */
@@ -773,8 +816,17 @@
 		margin-top: 30px;
 	}
 
-	.grid-portfolio__desc-back {
-		line-height: 4.5vw;
+	.grid-portfolio {
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 50vw;
+	}
+
+	.grid-portfolio__item-front.portfolio__2nd {
+		display: block;
+	}
+
+	.grid-portfolio__item-back.portfolio__2nd {
+		display: none;
 	}
 
 	/* ===== 9. CHARGE SECTION ===== */
@@ -1063,24 +1115,48 @@
 /* ================== MAX-WIDTH: 480px =================== */
 /* ======================================================= */
 @media (max-width: 480px) {
-	/* ===== 12. BENEFITS SECTION ===== */
-	.grid-benefits {
-		grid-template-columns: 230px;
-		justify-content: center;
+	/* ====== 3. PRODUCT SECTION ======= */
+	.grid-product {
+		grid-template-columns: repeat(auto-fit, minmax(290px, 372px));
+	}
+	.grid-product__options-list-back {
+		display: block;
+	}
+	.grid-product__price-front .text-hl, .grid-product__price-back .text-hl {
+		font-size: 22px;
+	}
+	.grid-product__image-front {
+		height: 228px;
+	}
+	.grid-product__content-front {
+		padding: 245px 20px 20px 20px;
+	}
+	.grid-product__price-front .text-hl, .grid-product__price-back .text-hl {
+		margin-top: 0;
+	}
+	.grid-product__price-front, .grid-product__price-back {
+		margin-bottom: 22px;
+	}
+	.grid-product__order-front, .grid-product__order-back {
+		margin-bottom: 11px;
+	}
+	.grid-product__desc-front, .grid-product__desc-back .grid-product__order-front, .grid-product__order-back {
+		font-size: 14px;
+	}
+	.grid-product__title-front, .grid-product__title-back {
+		font-size: 18px;
 	}
 
-	.benefits__grid {
-		margin-top: 10px;
+	.btn--product {
+		flex: 0 0 54px;
 	}
-	.benefits__title {
-		margin: 0 auto;
-		width: 230px;
-		text-align: center;
+
+	/* ===== 12. BENEFITS SECTION ===== */
+	.grid-benefits {
+		grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
 	}
-	.benefits__desc {
-		margin: 14px auto 0 auto;
-		width: 240px;
-		text-align: center;
+	.grid-benefits__caption {
+		font-size: 11px;
 	}
 
 	/* ===== 15. FAQ SECTION ===== */
@@ -1098,12 +1174,41 @@
 	}
 }
 @media (max-width: 380px) {
-	/* ===== 12. BENEFITS SECTION ===== */
+	/* ===== 5. PORTFOLIO SECTION ====== */
+	.portfolio__title {
+		font-size: 24px;
+	}
+
+	.grid-portfolio__icon-front {
+		width: 50px;
+		height: 50px;
+	}
+	.grid-portfolio__icon-front .svg-search {
+		width: 15px;
+		height: 15px;
+	}
+
+	.btn--portfolio-more {
+		margin: 25px auto 0 auto;
+		padding: 0 0 0px 15px;
+		height: 45px;
+	}
+	.btn--portfolio-more .btn__title {
+		font-size: 16px;
+	}
+
+	/* ===== 11. STEPS SECTION ===== */
 	.grid-steps__benefits-icon {
 		display: none;
 	}
 	.grid-steps__benefits-list-item {
 		font-size: 14px;
+	}
+
+	/* ===== 12. BENEFITS SECTION ===== */
+	.grid-benefits {
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		grid-auto-rows: auto;
 	}
 }
 @media (max-width: 320px) {
