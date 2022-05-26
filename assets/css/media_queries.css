@@ -256,7 +256,7 @@
 		gap: 30px;
 	}
 	.grid-product__content-front {
-		padding: 245px 20px 20px 20px;
+		padding: 20px 20px 20px 20px;
 	}
 	.grid-product__item-back {
 		padding: 20px;
@@ -749,9 +749,6 @@
 	.grid-product__image-front {
 		height: 185px;
 	}
-	.grid-product__content-front {
-		padding: 205px 20px 20px 20px;
-	}
 	.grid-product__desc-back {
 		margin-bottom: 17px;
 	}
@@ -1116,39 +1113,46 @@
 /* ======================================================= */
 @media (max-width: 480px) {
 	/* ====== 3. PRODUCT SECTION ======= */
+	.product__1st .grid-product__item-front {
+		display: flex;
+	}
+	.product__1st .grid-product__item-back {
+		display: none;
+	}
+
 	.grid-product {
-		grid-template-columns: repeat(auto-fit, minmax(290px, 372px));
-	}
-	.grid-product__options-list-back {
-		display: block;
-	}
-	.grid-product__price-front .text-hl, .grid-product__price-back .text-hl {
-		font-size: 22px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
 	}
 	.grid-product__image-front {
-		height: 228px;
+		flex: 0 0 33vw;
+		height: auto;
 	}
-	.grid-product__content-front {
-		padding: 245px 20px 20px 20px;
+	.grid-product__order-front, .grid-product__desc-front {
+		display: none;
 	}
-	.grid-product__price-front .text-hl, .grid-product__price-back .text-hl {
-		margin-top: 0;
+	.grid-product__title-front {
+		flex: 1 1 auto;
+		font-size: 12px;
+		/* font-weight: normal;
+		color: black; */
+		margin-bottom: 15px;
 	}
-	.grid-product__price-front, .grid-product__price-back {
-		margin-bottom: 22px;
+	.grid-product__price-front .text {
+		font-size: 12px;
 	}
-	.grid-product__order-front, .grid-product__order-back {
-		margin-bottom: 11px;
-	}
-	.grid-product__desc-front, .grid-product__desc-back .grid-product__order-front, .grid-product__order-back {
+	.grid-product__price-front .text-hl {
 		font-size: 14px;
 	}
-	.grid-product__title-front, .grid-product__title-back {
-		font-size: 18px;
+	.grid-product__content-front {
+		padding: 2vw;
 	}
 
 	.btn--product {
-		flex: 0 0 54px;
+		flex: 0 0 35px;
+	}
+	.btn--product .btn__title {
+		font-size: 13px;
 	}
 
 	/* ===== 12. BENEFITS SECTION ===== */
@@ -1174,6 +1178,16 @@
 	}
 }
 @media (max-width: 380px) {
+	/* ====== 3. PRODUCT SECTION ======= */
+	.grid-product__icon-front {
+		width: 50px;
+		height: 50px;
+	}
+	.grid-product__icon-front .svg-search {
+		width: 15px;
+		height: 15px;
+	}
+
 	/* ===== 5. PORTFOLIO SECTION ====== */
 	.portfolio__title {
 		font-size: 24px;

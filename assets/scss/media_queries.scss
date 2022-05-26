@@ -308,7 +308,7 @@
 		gap: 30px;
 	
 		&__content-front {
-			padding: 245px 20px 20px 20px;
+			padding: 20px 20px 20px 20px;
 		}
 	
 		&__item-back {
@@ -939,9 +939,6 @@
 		&__image-front {
 			height: 185px;}
 
-		&__content-front {
-			padding: 205px 20px 20px 20px;
-		}
 	
 		&__desc-back {
 			margin-bottom: 17px;
@@ -1361,57 +1358,116 @@
 
 	/* ====== 3. PRODUCT SECTION ======= */
 
+	.product__1st {
+		.grid-product__item-front {
+			display: flex;
+		}
+
+		.grid-product__item-back {
+			display: none;
+		}
+	}
+
 	.grid-product {
-		grid-template-columns: repeat(auto-fit, minmax(290px, 372px));
-	
-		&__options-list-back {
-			display: block;
-		}
-		
-		&__price-front .text-hl,
-		&__price-back .text-hl {
-			font-size: 22px;
-		}
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
 
 		&__image-front {
-			height: 228px;
-		}
-
-		&__content-front {
-			padding: 245px 20px 20px 20px;
+			flex: 0 0 33vw;
+			height: auto;
 		}
 	
-		&__price-front .text-hl,
-		&__price-back .text-hl {
-			margin-top: 0;
-		}
-
-		&__price-front,
-		&__price-back {
-			margin-bottom: 22px;
-		}
-
 		&__order-front,
-		&__order-back {
-			margin-bottom: 11px;
+		&__desc-front {
+			display: none;
 		}
-
-		&__desc-front,
-		&__desc-back 
-		&__order-front,
-		&__order-back {
-			font-size: 14px;
+		
+		&__title-front {
+			flex: 1 1 auto;
+			font-size: 12px;
+			/* font-weight: normal;
+			color: black; */
+			margin-bottom: 15px;
 		}
-
-		&__title-front,
-		&__title-back {
-			font-size: 18px;
+		
+		&__price-front {
+	
+			.text {
+				font-size: 12px;
+			}
+	
+			.text-hl {
+				font-size: 14px;
+			}
+		}
+	
+		&__content-front {
+			padding: 2vw;
 		}
 	}
 
 	.btn--product {
-		flex: 0 0 54px;
+		flex: 0 0 35px;
+
+		.btn__title {
+			font-size: 13px;
+		}
 	}
+	
+
+	// Вариант с центрированием единственной колонки (ниже)
+
+	// .grid-product {
+	// 	grid-template-columns: repeat(auto-fit, minmax(290px, 372px));
+	
+	// 	&__options-list-back {
+	// 		display: block;
+	// 	}
+		
+	// 	&__price-front .text-hl,
+	// 	&__price-back .text-hl {
+	// 		font-size: 22px;
+	// 	}
+
+	// 	&__image-front {
+	// 		height: 228px;
+	// 	}
+
+	// 	&__content-front {
+	// 		padding: 245px 20px 20px 20px;
+	// 	}
+	
+	// 	&__price-front .text-hl,
+	// 	&__price-back .text-hl {
+	// 		margin-top: 0;
+	// 	}
+
+	// 	&__price-front,
+	// 	&__price-back {
+	// 		margin-bottom: 22px;
+	// 	}
+
+	// 	&__order-front,
+	// 	&__order-back {
+	// 		margin-bottom: 11px;
+	// 	}
+
+	// 	&__desc-front,
+	// 	&__desc-back 
+	// 	&__order-front,
+	// 	&__order-back {
+	// 		font-size: 14px;
+	// 	}
+
+	// 	&__title-front,
+	// 	&__title-back {
+	// 		font-size: 18px;
+	// 	}
+	// }
+
+	// .btn--product {
+	// 	flex: 0 0 54px;
+	// }
 
 
 	/* ===== 12. BENEFITS SECTION ===== */
@@ -1449,6 +1505,18 @@
 
 
 @media (max-width: 380px) {
+
+	/* ====== 3. PRODUCT SECTION ======= */
+	
+	.grid-product__icon-front {
+		width: 50px;
+		height: 50px;
+
+		.svg-search {
+			width: 15px;
+			height: 15px;
+		}
+	}
 
 	/* ===== 5. PORTFOLIO SECTION ====== */
 
@@ -1499,7 +1567,6 @@
 	}
 
 	// Вариант с центрированием единственной колонки (ниже)
-
 
 	// .grid-benefits {
 	// 	grid-template-columns: 230px;

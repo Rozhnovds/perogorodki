@@ -583,9 +583,7 @@ body {
 	/* +++ SELECT STYLE */
 
 	&__select-label {
-		/* display: inline-block; */
 		font-size: 12px;
-		
 	}
 
 	&__select-dropdown {
@@ -725,7 +723,8 @@ button[class*='btn--product-calc'][class*='hint'] {
 
 button[class*='btn--product-calc'][class*='hint']:hover {
 	&::after {
-		min-width: 155px;  /* !!!!!!!!!!!!!!!!!Почему без этого текст переносится? */
+
+		min-width: 155px;
 		display: flex;
 		content: "Выполните расчёт";
 		right: 118%;
@@ -796,18 +795,13 @@ button[class*='btn--product-ring'][class*='hint']:hover {
 /* ----- item-front ----- */
 
 .grid-product__item-front {
-	position: relative;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 }
 
-.grid-product__image-wrapper-front {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
 .grid-product__image-front {
-	height: 228px; 
+	flex: 0 0 228px;
 	position: relative;
 
 	img {
@@ -826,10 +820,11 @@ button[class*='btn--product-ring'][class*='hint']:hover {
 }
 
 .grid-product__content-front {
+	margin-top: -2px;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	padding: 245px 18px 27px 29px;
+	flex: 1 1 auto;
+	padding: 15px 18px 27px 27px;
 	border: 1px solid #d6d6d6;
 	
 }
@@ -850,7 +845,7 @@ button[class*='btn--product-ring'][class*='hint']:hover {
 }
 
 .grid-product__order-front {
-	margin-bottom: 11px;
+	margin-bottom: 13px;
 	font-size: 14px;
 	font-weight: bold;
 	color:rgba( 0, 0, 0, 0.5 );
@@ -858,13 +853,13 @@ button[class*='btn--product-ring'][class*='hint']:hover {
 }
 
 .grid-product__price-front {
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 	font-size: 14px;
 	color:rgba( 0, 0, 0, 0.5 );
 	
 	.text {
 		display: inline-block;
-    	margin-right: 8px;
+		margin-right: 2px;
 	}
 
 	.text-hl {
@@ -959,6 +954,11 @@ button[class*='btn--product-ring'][class*='hint']:hover {
 	}
 }
 
+.product__1st {
+	.grid-product__item-front {
+		display: none;
+	}
+}
 
 /* ================================= */
 /* ====== 4. REQUEST SECTION ======= */
